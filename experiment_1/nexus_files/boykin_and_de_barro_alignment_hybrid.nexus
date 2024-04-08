@@ -556,6 +556,6 @@ BEGIN MRBAYES;
 	mcmcp samplefreq=1000 printfreq=1000 diagnfreq=5000 nchains=4 startingtree=random;
 	mcmcp savebrlens=yes filename=mb_1n16ppn_boykin_and_de_barro_outfile;
 	mcmc;
-	sump;
-	sumt;
+	sump burnin=250 printtofile=yes;
+	sumt burnin=250;
 END;
