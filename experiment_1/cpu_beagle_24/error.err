@@ -1,0 +1,4 @@
+
+Lmod is automatically replacing "mvapich2/2.3.6-ouywal" with "openmpi/4.1.4".
+
+srun: error: atl1-1-03-007-19-1: tasks 0-23: Exited with exit code 1

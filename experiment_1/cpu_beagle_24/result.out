@@ -1,0 +1,676 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-07-2024 16:25:46
+Job ID:    571167
+User ID:   akim466
+Account:   coc
+Job name:  whitefly_cpu_beagle_24
+Partition: coc-cpu
+---------------------------------------
+
+
+                            MrBayes 3.2.7 x86_64
+
+                      (Bayesian Analysis of Phylogeny)
+
+                             (Parallel version)
+                         (24 processors available)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "../nexus_files/boykin_and_de_barro_alignment.nexus"
+   UNIX line termination
+   Longest line length = 1385
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading data block
+      Allocated taxon set
+      Allocated matrix
+      Defining new matrix with 544 taxa and 1318 characters
+      Data is Dna
+      Gaps coded as -
+      Missing data coded as ?
+      Taxon   1 -> Aleurocanthus_camelliae_AB536794_AB536794.1
+      Taxon   2 -> Aleurocanthus_camelliae_AB536800_AB536800.1
+      Taxon   3 -> Aleurocanthus_spiniferus_AB536793_AB536793.1
+      Taxon   4 -> Aleurocanthus_spiniferus_AB558172_AB558172.1
+      Taxon   5 -> Bemisia_subdecipiens_GU220056_GU220056.1
+      Taxon   6 -> Aleurochiton__aceris_AY572538_AY572538.1
+      Taxon   7 -> Bemisia_afer_GQ139515_GQ139515.1
+      Taxon   8 -> Bemisia_afer_GU220055_GU220055.1
+      Taxon   9 -> Bemisia_berbericola_HQ457046_HQ457046.1
+      Taxon  10 -> Uganda_AY903553_AY903553.1
+      Taxon  11 -> Uganda_Namulonge_AY903576_AY903576.1
+      Taxon  12 -> Uganda_Namulonge_AY9035777_AY903577.1
+      Taxon  13 -> Uganda_Namulonge_AY903579_AY903579.1
+      Taxon  14 -> Bemisia_tuberculata_AY057220_AY057220.1
+      Taxon  15 -> Bemisia_emiliae_DQ989555_DQ989555.1
+      Taxon  16 -> SubSahAf4_Cameroon_AF344255_AF344255.1
+      Taxon  17 -> SubSahAf4_Cameroon_AF344245_AF344245.1
+      Taxon  18 -> SubSahAf4_Cameroon_AF344251_AF344251.1
+      Taxon  19 -> SubSahAf4_Cameroon_AF344252_AF344252.1
+      Taxon  20 -> SubSahAf4_Cameroon_AF344249_AF344249.1
+      Taxon  21 -> SubSahAf4_Cameroon_AF344254_AF344254.1
+      Taxon  22 -> SubSahAf4_Cameroon_H36_AF344246_AF344246.1
+      Taxon  23 -> SubSahAf3_Cameroon_AF344257_AF344257.1
+      Taxon  24 -> SubSahAf1_Uganda_AY057181_AY057181.1
+      Taxon  25 -> SubSahAf1_Uganda_AY057182_AY057182.1
+      Taxon  26 -> SubSahAf1_Swaziland_AF344276_AF344276.1
+      Taxon  27 -> SubSahAf1_Ghana_AY827591_AY827591.1
+      Taxon  28 -> SubSahAf1_Ghana_AF418668_AF418668.1
+      Taxon  29 -> SubSahAf1_SouthAfrica_AF344264_AF344264.1
+      Taxon  30 -> SubSahAf1_SouthAfrica_AF344267_AF344267.1
+      Taxon  31 -> SubSahAf1_Tanzania_AF418667_AF418667.1
+      Taxon  32 -> SubSahAf1_Uganda_Malawi_AY057162_AY057162.1
+      Taxon  33 -> SubSahAf1_Mozambique_AF344278_AF344278.1
+      Taxon  34 -> SubSahAf1_Congo_DQ130054_DQ130054.1
+      Taxon  35 -> SubSahAf1_Uganda_Namulonge_AY903490_AY903490.1
+      Taxon  36 -> SubSahAf1_Uganda_Mukono_AY903479_AY903479.1
+      Taxon  37 -> SubSahAf1_Uganda_Namulonge_AY903492_AY903492.1
+      Taxon  38 -> SubSahAf1_Uganda_H44_AY057169_AY057169.1
+      Taxon  39 -> SubSahAf1_Uganda_AY057178_AY057178.1
+      Taxon  40 -> SubSahAf1_Uganda_Namulonge_AY903494_AY903494.1
+      Taxon  41 -> SubSahAf1_Uganda_Namulonge_AY903507_AY903507.1
+      Taxon  42 -> SubSahAf1_Uganda_AY057168_AY057168.1
+      Taxon  43 -> SubSahAf1_Uganda_AY057185_AY057185.1
+      Taxon  44 -> SubSahAf1_Uganda_Kalangala_AY563702_AY563702.1
+      Taxon  45 -> SubSahAf1_Uganda_Namulonge_AY903493_AY903493.1
+      Taxon  46 -> SubSahAf1_Zambia_Shandu_AF344284_AF344284.1
+      Taxon  47 -> SubSahAf1_Uganda_Mbarara_AY563652_AY563652.1
+      Taxon  48 -> SubSahAf1_Uganda_Soroti_AY563657_AY563657.1
+      Taxon  49 -> SubSahAf1_Uganda_Iganga_AY563641_AY563641.1
+      Taxon  50 -> SubSahAf1_Uganda_AY057179_AY057179.1
+      Taxon  51 -> SubSahAf1_Uganda_AY057210_AY057210.1
+      Taxon  52 -> SubSahAf1_Uganda_H42_AY057149_AY057149.1
+      Taxon  53 -> SubSahAf1_Uganda_H43_AY057151_AY057151.1
+      Taxon  54 -> SubSahAf1_Uganda_Mbarara_AY563674_AY563674.1
+      Taxon  55 -> SubSahAf1_Uganda_Soroti_AY563679_AY563679.1
+      Taxon  56 -> SubSahAf1_Uganda_AY057183_AY057183.1
+      Taxon  57 -> SubSahAf1_Uganda_Namulonge_AY903469_AY903469.1
+      Taxon  58 -> SubSahAf1_Uganda_Busukuma_AY903483_AY903483.1
+      Taxon  59 -> SubSahAf1_Uganda_Busukuma_AY903487_AY903487.1
+      Taxon  60 -> SubSahAf1_Uganda_Kalangala_AY563666_AY563666.1
+      Taxon  61 -> SubSahAf1_Uganda_Masaka_AY563648_AY563648.1
+      Taxon  62 -> SubSahAf1_Uganda_Mbarara_AY563695_AY563695.1
+      Taxon  63 -> SubSahAf1_Uganda_Namulonge_AY903464_AY903464.1
+      Taxon  64 -> SubSahAf1_Uganda_Namulonge_AY903470_AY903470.1
+      Taxon  65 -> SubSahAf1_Uganda_Namulonge_AY903475_AY903475.1
+      Taxon  66 -> SubSahAf1_Uganda_Namulonge_AY903502_AY903502.1
+      Taxon  67 -> SubSahAf1_Uganda_Namulonge_AY903510_AY903510.1
+      Taxon  68 -> SubSahAf1_Uganda_Namulonge_AY903511_AY903511.1
+      Taxon  69 -> SubSahAf1_Uganda_Namulonge_AY903512_AY903512.1
+      Taxon  70 -> SubSahAf1_Uganda_Masaka_AY903461_AY903461.1
+      Taxon  71 -> SubSahAf1_Uganda_H46_AY057180_AY057180.1
+      Taxon  72 -> SubSahAf1_Uganda_Masaka_AY903462_AY903462.1
+      Taxon  73 -> SubSahAf5_Uganda_Mukono_AM040598_AM040598.1
+      Taxon  74 -> SubSahAf2_UG2_Cameroon_EU760745_EU760745.1
+      Taxon  75 -> SubSahAf2_Spain_AY827611_AY827611.1
+      Taxon  76 -> SubSahAf2_Spain_Ipomea_GU086361_GU086361.1
+      Taxon  77 -> SubSahAf2_Uganda_AY057146_AY057146.1
+      Taxon  78 -> SubSahAf2_Uganda_AY057143_AY057143.1
+      Taxon  79 -> SubSahAf2_Mali_AY827604_AY827604.1
+      Taxon  80 -> SubSahAf2_Nigeria_AY827607_AY827607.1
+      Taxon  81 -> SubSahAf2_Uganda_Kabarole_Rural_AY563664_AY563664.1
+      Taxon  82 -> SubSahAf2_Mali_AY827605_AY827605.1
+      Taxon  83 -> SubSahAf2_Uganda_Kibaale_AY563667_AY563667.1
+      Taxon  84 -> SubSahAf2_Uganda_AY057141_AY057141.1
+      Taxon  85 -> SubSahAf2_Uganda_Bugahya_AY563662_AY563662.1
+      Taxon  86 -> SubSahAf2_Uganda_DQ130063_DQ130063.1
+      Taxon  87 -> SubSahAf2_Uganda_AY057173_AY057173.1
+      Taxon  88 -> SubSahAf2_Uganda_Ssanji_AM040607_AM040607.1
+      Taxon  89 -> SubSahAf2_Uganda_Kumi_AY563646_AY563646.1
+      Taxon  90 -> Japan2_Japan_Gunma_AB308111_AB308111.1
+      Taxon  91 -> Japan2_Japan_Kagoshima_AB308119_AB308119.1
+      Taxon  92 -> Japan2_Japan_Kagoshima_AB308118_AB308118.1
+      Taxon  93 -> Japan2_Japan_Kumamoto_AB308115_AB308115.1
+      Taxon  94 -> Japan2_Japan_Oita_AB308117_AB308117.1
+      Taxon  95 -> Japan2_Japan_Kumamoto_AB308116_AB308116.1
+      Taxon  96 -> Africa_Cameroon_EU760739_EU760739.1
+      Taxon  97 -> NewWorld2_Argentina_JF901836_JF901836.1
+      Taxon  98 -> NewWorld2_Argentina_JF901838_JF901838.1
+      Taxon  99 -> NewWorld2_Brazil_SJRP_JN689353_JN689353.1
+      Taxon 100 -> NewWorld2_Argentina_JF901837_JF901837.1
+      Taxon 101 -> NewWorld2_Brazil_Bastos_JN689351_JN689351.1
+      Taxon 102 -> NewWorld1_Argentina_JF901844_JF901844.1
+      Taxon 103 -> NewWorld1_Argentina_JF901839_JF901839.1
+      Taxon 104 -> NewWorld2_Brazil_Ilha_Solteira_JN689354_JN689354.1
+      Taxon 105 -> NewWorld2_Brazil_Bastos_JN689350_JN689350.1
+      Taxon 106 -> NewWorld2_Brazil_Bastos_JN689352_JN689352.1
+      Taxon 107 -> NewWorld2_Brazil_Selviria_JN689355_JN689355.1
+      Taxon 108 -> NewWorld1_Brazil_Jacupiranga_JN969967_JN969967.1
+      Taxon 109 -> NewWorld1_Brazil_Jacupiranga_JN969968_JN969968.1
+      Taxon 110 -> NewWorld1_Brazil_Pariquera_Acu_JN969969_JN969969.1
+      Taxon 111 -> NewWorld1_Sudan_EU760727_EU760727.1
+      Taxon 112 -> NewWorld1_Martinique_FN821787_FN821787.1
+      Taxon 113 -> NewWorld1_Colombia_AJ550167_AJ550167.1
+      Taxon 114 -> NewWorld1_Panama_DQ130060_DQ130060.1
+      Taxon 115 -> NewWorld1_Panama_DQ130061_DQ130061.1
+      Taxon 116 -> NewWorld1_Belize_DQ130053_DQ130053.1
+      Taxon 117 -> NewWorld1_PuertoRico_BioSida_AY057134_AY057134.1
+      Taxon 118 -> NewWorld1_Guatemala_AY057129_AY057129.1
+      Taxon 119 -> NewWorld1_USA_A_biotype_AY521259_AY521259.1
+      Taxon 120 -> NewWorld1_Mexico_DQ130058_DQ130058.1
+      Taxon 121 -> NewWorld1_Mexico_AY057126_AY057126.1
+      Taxon 122 -> NewWorld1_ElSalvador_AY057128_AY057128.1
+      Taxon 123 -> NewWorld1_Honduras_AY057133_AY057133.1
+      Taxon 124 -> NewWorld1_Mexico_DQ130059_DQ130059.1
+      Taxon 125 -> NewWorld1_Mexico_EU427729_EU427729.1
+      Taxon 126 -> Bemisia_atriplex2_GU086363_GU086363.1
+      Taxon 127 -> Bemisia_atriplex_GU086362_GU086362.1
+      Taxon 128 -> Bemisia_on_Rhagodia_parabolica_HQ457047_HQ457047.1
+      Taxon 129 -> IndianOcean_Seychelles_AJ550182_AJ550182.1
+      Taxon 130 -> IndianOcean_MS_Reunion_AJ550179_AJ550179.1
+      Taxon 131 -> IndianOcean_MS_Reunion_AJ550180_AJ550180.1
+      Taxon 132 -> IndianOcean_Reunion_EU760735_EU760735.1
+      Taxon 133 -> IndianOcean_Uganda_Busukuma_AY903536_AY903536.1
+      Taxon 134 -> IndianOcean_Uganda_Namulonge_AY903525_AY903525.1
+      Taxon 135 -> IndianOcean_Uganda_Namulonge_AY903523_AY903523.1
+      Taxon 136 -> IndianOcean_Uganda_Namulonge_AY903527_AY903527.1
+      Taxon 137 -> IndianOcean_Uganda_Busukuma_AY903537_AY903537.1
+      Taxon 138 -> IndianOcean_Uganda_Busukuma_AY903539_AY903539.1
+      Taxon 139 -> IndianOcean_MS_Reunion_AJ550178_AJ550178.1
+      Taxon 140 -> IndianOcean_Uganda_Busukuma_AY903538_AY903538.1
+      Taxon 141 -> IndianOcean_Uganda_Masindi_AY903522_AY903522.1
+      Taxon 142 -> IndianOcean_MS_Madagascar_AJ550171_AJ550171.1
+      Taxon 143 -> MidEastAm1_Egypt_DQ130055_DQ130055.1
+      Taxon 144 -> MidEastAm1_Pakistan_Ghotki_Sindh_GU977267_GU977267.1
+      Taxon 145 -> MidEastAm1_Pakistan_Sukkur_Sindh_GU977268_GU977268.1
+      Taxon 146 -> MidEastAm1_China_Jiangsu_EU263624_EU263624.1
+      Taxon 147 -> MidEastAm1_Cuba_VillaClara_FN821806_FN821806.1
+      Taxon 148 -> MidEastAm1_China_Yunnan_AY686078_AY686078.1
+      Taxon 149 -> MidEastAm1_Pakistan_Sindh_Hap9_GU977269_GU977269.1
+      Taxon 150 -> MidEastAm1_Pakistan_Sindh_AJ510075_AJ510075.1
+      Taxon 151 -> MidEastAm1_Yemen_GU086360_GU086360.1
+      Taxon 152 -> MidEastAm1_Iran_GU086350_GU086350.1
+      Taxon 153 -> MidEastAm1_Iran_GU086352_GU086352.1
+      Taxon 154 -> MidEastAm1_Kuwait_GU086356_GU086356.1
+      Taxon 155 -> MidEastAm1_Iran_GU086351_GU086351.1
+      Taxon 156 -> MidEastAm1_Saudi_Arabia_GU086345_GU086345.1
+      Taxon 157 -> MidEastAm1_Kuwait_GU086354_GU086354.1
+      Taxon 158 -> MidEastAm1_Kuwait_GU086355_GU086355.1
+      Taxon 159 -> MidEastAm1_Kuwait_GU086346_GU086346.1
+      Taxon 160 -> MidEastAm1_Yemen_GU086359_GU086359.1
+      Taxon 161 -> MidEastAm1_Iran_GU086353_GU086353.1
+      Taxon 162 -> MidEastAm1_Saudi_Arabia_GU086357_GU086357.1
+      Taxon 163 -> MidEastAm1_Yemen_GU086343_GU086343.1
+      Taxon 164 -> MidEastAm1_Saudi_Arabia_GU086358_GU086358.1
+      Taxon 165 -> MidEastAm1_Iraq_Al_A_Zamiyah_HM070413_HM070413.1
+      Taxon 166 -> MidEastAm1_Pakistan_Sindh_AJ510079_AJ510079.1
+      Taxon 167 -> MidEastAm1_United_Arab_Emirates_DQ133382_DQ133382.1
+      Taxon 168 -> MidEastAm1_Pakistan_Sindh_AJ510067_AJ510067.1
+      Taxon 169 -> MidEastAm1_Pakistan_Tando_Allahyar_Sindh_GU977273_GU977273.1
+      Taxon 170 -> MidEastAm1_Pakistan_Sindh_AJ510081_AJ510081.1
+      Taxon 171 -> MidEastAm1_Pakistan_Sindh_Hap10_AJ510076_AJ510076.1
+      Taxon 172 -> MidEastAm1_Pakistan_Sindh_Hap3_AJ510071_AJ510071.1
+      Taxon 173 -> MidEastAm1_Syria_Al_Hasakeh_Hap2_AB473559_AB473559.1
+      Taxon 174 -> MidEastAm1_Israel_EF398127_EF398127.1
+      Taxon 175 -> MidEastAm1_China_Jiangxi_AY686073_AY686073.1
+      Taxon 176 -> MidEastAm1_Israel_AY766373_AY766373.1
+      Taxon 177 -> MidEastAm1_Cuba_LasTunas_FN821802_FN821802.1
+      Taxon 178 -> MidEastAm1_Morocco_Saidia_AJ517768_AJ517768.1
+      Taxon 179 -> MidEastAm1_China_Shandong_EF398091_EF398091.1
+      Taxon 180 -> MidEastAm1_China_Shandong_EF398083_EF398083.1
+      Taxon 181 -> MidEastAm1_China_HE653718_HE653718.1
+      Taxon 182 -> MidEastAm1_Brazil_Ilha_Solteira_JN689357_JN689357.1
+      Taxon 183 -> MidEastAm1_Egypt_DQ130056_DQ130056.1
+      Taxon 184 -> MidEastAm1_Israel_Tel_Aviv_Hap7_AF418671_AF418671.1
+      Taxon 185 -> MidEastAm1_Jordan_GU086347_GU086347.1
+      Taxon 186 -> MidEastAm1_Argentina_BuenosAires_Hap5_AF340215_AF340215.1
+      Taxon 187 -> MidEastAm1_China_Jiangsu_EU263625_EU263625.1
+      Taxon 188 -> MidEastAm1_Cuba_Camaguey_FN821808_FN821808.1
+      Taxon 189 -> MidEastAm1_Cuba_Granma_FN821803_FN821803.1
+      Taxon 190 -> MidEastAm1_Cuba_Habana_FN821804_FN821804.1
+      Taxon 191 -> MidEastAm1_Cuba_Lahabana_FN821807_FN821807.1
+      Taxon 192 -> MidEastAm1_Cuba_PinardelRio_FN821801_FN821801.1
+      Taxon 193 -> MidEastAm1_Cuba_VillaClara_FN821800_FN821800.1
+      Taxon 194 -> MidEastAm1_India_Karnataka_Bangalore_AJ748368_AJ748368.1
+      Taxon 195 -> MidEastAm1_SouthKorea_Goyang_Hap8_DQ174538_DQ174538.1
+      Taxon 196 -> MidEastAm1_TrinidadTobago_FN821794_FN821794.1
+      Taxon 197 -> MidEastAm1_China_Hainan_EU192068_EU192068.1
+      Taxon 198 -> MidEastAm1_China_Shandong_EF398086_EF398086.1
+      Taxon 199 -> MidEastAm1_China_Shandong_EF398090_EF398090.1
+      Taxon 200 -> MidEastAm1_China_Shandong_Hap6_EF398087_EF398087.1
+      Taxon 201 -> MidEastAm1_China_Shandong_EF398088_EF398088.1
+      Taxon 202 -> MidEastAm1_India_Bangalore_AM408896_AM408896.1
+      Taxon 203 -> MidEastAm1_Taiwan_Hualien_Hap11_DQ989539_DQ989539.1
+      Taxon 204 -> MidEastAm1_China_Shanghai_DQ989525_DQ989525.1
+      Taxon 205 -> MidEastAm1_Australia_Bundaberg_DQ174535_DQ174535.1
+      Taxon 206 -> MidEastAm1_Australia_Emerald_HM070414_HM070414.1
+      Taxon 207 -> MidEastAm1_India_Karnataka_AF321927_AF321927.1
+      Taxon 208 -> MidEastAm1_India_Karnataka_Kolar_AM040594_AM040594.1
+      Taxon 209 -> MidEastAm1_China_Guangzhou_Hap4_AY686063_AY686063.1
+      Taxon 210 -> MidEastAm1_Israel_HM070412_HM070412.1
+      Taxon 211 -> MidEastAm1_Reunion_PetiteIle_AJ877260_AJ877260.1
+      Taxon 212 -> MidEastAm1_Taiwan_GU086342_GU086342.1
+      Taxon 213 -> MidEastAm1_China_Shandong_EF398113_EF398113.1
+      Taxon 214 -> MidEastAm1_TrinidadTobago_FN821797_FN821797.1
+      Taxon 215 -> MidEastAm1_Brazil_Selviria_JN689358_JN689358.1
+      Taxon 216 -> MidEastAm1_China_Fujian_AY686062_AY686062.1
+      Taxon 217 -> MidEastAm1_China_Zhejiang_GQ332577_GQ332577.1
+      Taxon 218 -> MidEastAm1_Cuba_Habana_FN821798_FN821798.1
+      Taxon 219 -> MidEastAm1_Egypt_DQ133373_DQ133373.1
+      Taxon 220 -> MidEastAm1_Egypt_Ismailia_GU977249_GU977249.1
+      Taxon 221 -> MidEastAm1_Guadeloupe_SaintFrancois_AM180064_AM180064.1
+      Taxon 222 -> MidEastAm1_Indonesia_Bogor_HM070410_HM070410.1
+      Taxon 223 -> MidEastAm1_Israel_DQ174536_DQ174536.1
+      Taxon 224 -> MidEastAm1_Japan_Hiroshima_DQ174537_DQ174537.1
+      Taxon 225 -> MidEastAm1_Japan_Kochi_AB204578_AB204578.1
+      Taxon 226 -> MidEastAm1_Japan_Kumamoto_AB204580_AB204580.1
+      Taxon 227 -> MidEastAm1_Japan_Kumamoto_AB204581_AB204581.1
+      Taxon 228 -> MidEastAm1_Mayotte_AJ550173_AJ550173.1
+      Taxon 229 -> MidEastAm1_Morocco_Nador_AM176570_AM176570.1
+      Taxon 230 -> MidEastAm1_Reunion_AJ550174_AJ550174.1
+      Taxon 231 -> MidEastAm1_Saudi_Arabia_GU086344_GU086344.1
+      Taxon 232 -> MidEastAm1_Spain_Almeria_GU086348_GU086348.1
+      Taxon 233 -> MidEastAm1_Taiwan_Matsu_DQ174534_DQ174534.1
+      Taxon 234 -> MidEastAm1_Taiwan_Taidung_DQ174530_DQ174530.1
+      Taxon 235 -> MidEastAm1_TrinidadTobago_FN821790_FN821790.1
+      Taxon 236 -> MidEastAm1_TrinidadTobago_FN821791_FN821791.1
+      Taxon 237 -> MidEastAm1_USA_Arizona_AY057123_AY057123.1
+      Taxon 238 -> MidEastAm1_Brazil_Capao_Bonito_JN689356_JN689356.1
+      Taxon 239 -> MidEastAm1_Japan_Ehime_Hap1_AB204577_AB204577.1
+      Taxon 240 -> MidEastAm1_USA_Arizona_HM070411_HM070411.1
+      Taxon 241 -> MidEastAm1_USA_Florida_GU086340_GU086340.1
+      Taxon 242 -> MidEastAm1_Italy_Sicily_GU086341_GU086341.1
+      Taxon 243 -> MidEastAm2_Reunion_AJ550177_AJ550177.1
+      Taxon 244 -> Mediterranean_Ghana_SubSahAfSL_AY827582_AY827582.1
+      Taxon 245 -> Mediterranean_Ghana_SubSahAfSL_AY827580_AY827580.1
+      Taxon 246 -> Mediterranean_Uganda_Namulonge_AY903529_AY903529.1
+      Taxon 247 -> Mediterranean_Uganda_Mukono_AY903556_AY903556.1
+      Taxon 248 -> Mediterranean_Uganda_Kabarole_AY903551_AY903551.1
+      Taxon 249 -> Mediterranean_Uganda_Namulonge_AY903531_AY903531.1
+      Taxon 250 -> Mediterranean_Uganda_Namulonge_AY903564_AY903564.1
+      Taxon 251 -> Mediterranean_Nigeria_Hap15_SubSahAfSL_AY827606_AY827606.1
+      Taxon 252 -> Mediterranean_Uganda_AY903534_AY903534.1
+      Taxon 253 -> Mediterranean_Uganda_Hap24_AY903540_AY903540.1
+      Taxon 254 -> Mediterranean_Ghana_SubSahAfSL_AY827588_AY827588.1
+      Taxon 255 -> Mediterranean_Ghana_SubSahAfSL_AY827590_AY827590.1
+      Taxon 256 -> Mediterranean_Ghana_AY827581_AY827581.1
+      Taxon 257 -> Mediterranean_Ghana_SubSahAfSL_AY827579_AY827579.1
+      Taxon 258 -> Mediterranean_Ghana_SubSahAfSL_AY827589_AY827589.1
+      Taxon 259 -> Mediterranean_IvoryCoast_Hap6_SubSahAfSL_AY057136_AY057136.1
+      Taxon 260 -> Mediterranean_Ivory_Coast_FJ766383_FJ766383.1
+      Taxon 261 -> Mediterranean_Burkina_Faso_Hap9_FJ766391_FJ766391.1
+      Taxon 262 -> Mediterranean_Sudan_AY827615_AY827615.1
+      Taxon 263 -> Mediterranean_Spain_DQ174539_DQ174539.1
+      Taxon 264 -> Mediterranean_Cameroon_EU760741_EU760741.1
+      Taxon 265 -> Mediterranean_Burkino_Faso_FJ766431_FJ766431.1
+      Taxon 266 -> Mediterranean_Burkina_Faso_FJ766384_FJ766384.1
+      Taxon 267 -> Mediterranean_Burkina_Faso_FJ766429_FJ766429.1
+      Taxon 268 -> Mediterranean_Burkina_Faso_Hap12_FJ766405_FJ766405.1
+      Taxon 269 -> Mediterranean_Burkina_Faso_FJ766408_FJ766408.1
+      Taxon 270 -> Mediterranean_Burkina_Faso_Hap11_FJ766387_FJ766387.1
+      Taxon 271 -> Mediterranean_Burkina_Faso_FJ766385_FJ766385.1
+      Taxon 272 -> Mediterranean_Burkina_Faso_Hap10_FJ766400_FJ766400.1
+      Taxon 273 -> Mediterranean_Croatia_II_a_GU086334_GU086334.1
+      Taxon 274 -> Mediterranean_Croatia_II_b_GU086335_GU086335.1
+      Taxon 275 -> Mediterranean_Turkey_AY827619_AY827619.1
+      Taxon 276 -> Mediterranean_Syria_Hama_AB297898_AB297898.1
+      Taxon 277 -> Mediterranean_Egypt_GU086331_GU086331.1
+      Taxon 278 -> Mediterranean_Syria_Hama_Hap23_AB297897_AB297897.1
+      Taxon 279 -> Mediterranean_Turkey_Hap3_AY827617_AY827617.1
+      Taxon 280 -> Mediterranean_Sudan_AY827614_AY827614.1
+      Taxon 281 -> Mediterranean_Spain_AF342769_AF342769.1
+      Taxon 282 -> Mediterranean_Sudan_AY827612_AY827612.1
+      Taxon 283 -> Mediterranean_Croatia_II_d_GU086336_GU086336.1
+      Taxon 284 -> Mediterranean_China_Yunnan_EU192049_EU192049.1
+      Taxon 285 -> Mediterranean_China_Yunnan_EU192061_EU192061.1
+      Taxon 286 -> Mediterranean_Sudan_AY827613_AY827613.1
+      Taxon 287 -> Mediterranean_Algeria_AM176574_AM176574.1
+      Taxon 288 -> Mediterranean_Czech_B1_Hap4_GU086330_GU086330.1
+      Taxon 289 -> Mediterranean_France_AM691055_AM691055.1
+      Taxon 290 -> Mediterranean_Spain_Hap17_AF342775_AF342775.1
+      Taxon 291 -> Mediterranean_Cameroon_Hap20_EU760721_EU760721.1
+      Taxon 292 -> Mediterranean_Crete_Hap16_DQ365857_DQ365857.1
+      Taxon 293 -> Mediterranean_France_Hap21_AM691062_AM691062.1
+      Taxon 294 -> Mediterranean_Algeria_AM176575_AM176575.1
+      Taxon 295 -> Mediterranean_China_HE653724_HE653724.1
+      Taxon 296 -> Mediterranean_Croatia_Split_a_GU086338_GU086338.1
+      Taxon 297 -> Mediterranean_France_AM180063_AM180063.1
+      Taxon 298 -> Mediterranean_France_AM691063_AM691063.1
+      Taxon 299 -> Mediterranean_France_AM691067_AM691067.1
+      Taxon 300 -> Mediterranean_Morocco_AJ517769_AJ517769.1
+      Taxon 301 -> Mediterranean_Morocco_AM176571_AM176571.1
+      Taxon 302 -> Mediterranean_Taiwan_AOP_GU086339_GU086339.1
+      Taxon 303 -> Mediterranean_France_AM691064_AM691064.1
+      Taxon 304 -> Mediterranean_Morocco_AY057138_AY057138.1
+      Taxon 305 -> Mediterranean_France_Hap19_AM691059_AM691059.1
+      Taxon 306 -> Mediterranean_Spain_Almeria_DQ302946_DQ302946.1
+      Taxon 307 -> Mediterranean_China_Beijing_Hap7_GU086332_GU086332.1
+      Taxon 308 -> Mediterranean_Croatia_I_c_GU086337_GU086337.1
+      Taxon 309 -> Mediterranean_Morocco_Hap13_AF342773_AF342773.1
+      Taxon 310 -> Mediterranean_Spain_DQ174540_DQ174540.1
+      Taxon 311 -> Mediterranean_China_4_Hap2_GU086333_GU086333.1
+      Taxon 312 -> Mediterranean_Burkina_Faso_Hap5_FJ766432_FJ766432.1
+      Taxon 313 -> Mediterranean_Ghana_AM040609_AM040609.1
+      Taxon 314 -> Mediterranean_Burkina_Faso_FJ766381_FJ766381.1
+      Taxon 315 -> Mediterranean_Crete_Hap18_DQ365856_DQ365856.1
+      Taxon 316 -> Mediterranean_Uganda_AY903578_AY903578.1
+      Taxon 317 -> Mediterranean_Sudan_Hap8_DQ133378_DQ133378.1
+      Taxon 318 -> Mediterranean_Egypt_Zawiat_Razin_EF694108_EF694108.1
+      Taxon 319 -> Mediterranean_China_Hubei_EF694112_EF694112.1
+      Taxon 320 -> Mediterranean_China_Fuzhou_GU168793_GU168793.1
+      Taxon 321 -> Mediterranean_China_Hubei_EF667476_EF667476.1
+      Taxon 322 -> Mediterranean_China_Hubei_EF694111_EF694111.1
+      Taxon 323 -> Mediterranean_China_Zhejiang_GQ139500_GQ139500.1
+      Taxon 324 -> Mediterranean_Egypt_Hap14_FJ025797_FJ025797.1
+      Taxon 325 -> Mediterranean_Morocco_AM176573_AM176573.1
+      Taxon 326 -> Mediterranean_China_Q_Hap1_GU086329_GU086329.1
+      Taxon 327 -> Australia_Indonesia_GU086327_GU086327.1
+      Taxon 328 -> Australia_Indonesia_GU086325_GU086325.1
+      Taxon 329 -> Australia_Indonesia_GU086326_GU086326.1
+      Taxon 330 -> Australia_Indonesia_HQ457045_HQ457045.1
+      Taxon 331 -> China3_Bangladesh_Jessore_AJ748382_AJ748382.1
+      Taxon 332 -> China3_China_Yunnan_EU192051_EU192051.1
+      Taxon 333 -> Japan1_Japan_Kagoshima_AB440790_AB440790.1
+      Taxon 334 -> Japan1_Japan_Kagoshima_AB440785_AB440785.1
+      Taxon 335 -> Japan1_Japan_Kagoshima_AB440786_AB440786.1
+      Taxon 336 -> China2_China_Guangdong_AY686072_AY686072.1
+      Taxon 337 -> China1_China_Hubei_AY686089_AY686089.1
+      Taxon 338 -> China1_China_Hunan_AY686085_AY686085.1
+      Taxon 339 -> China1_China_Chongqing_AY686091_AY686091.1
+      Taxon 340 -> China1_China_Guangdong_HM137317_HM137317.1
+      Taxon 341 -> China1_China_Sichuan_HM137315_HM137315.1
+      Taxon 342 -> China1_China_Anhui_GQ139495_GQ139495.1
+      Taxon 343 -> China1_China_Jiangxi_HM137328_HM137328.1
+      Taxon 344 -> China1_China_Sichuan_HM137351_HM137351.1
+      Taxon 345 -> China1_China_Zhejiang_DQ309078_DQ309078.1
+      Taxon 346 -> Italy1_Sicily_AY827596_AY827596.1
+      Taxon 347 -> Italy1_Sicily_AY827598_AY827598.1
+      Taxon 348 -> Italy1_Sicily_AY827600_AY827600.1
+      Taxon 349 -> Italy1_Sicily_AY827601_AY827601.1
+      Taxon 350 -> Italy1_Sicily_AY827602_AY827602.1
+      Taxon 351 -> Italy1_Sicily_AY827603_AY827603.1
+      Taxon 352 -> Italy1_Sicily_AY827599_AY827599.1
+      Taxon 353 -> AsiaII_10_China_Guangdong_HM137339_HM137339.1
+      Taxon 354 -> AsiaII_10_China_Guangdong_HM137356_HM137356.1
+      Taxon 355 -> AsiaII_5_Bangladesh_Joydebpur_AJ748393_AJ748393.1
+      Taxon 356 -> AsiaII_5_Bangladesh_Bogra_AJ748390_AJ748390.1
+      Taxon 357 -> AsiaII_5_India_AJ748376_AJ748376.1
+      Taxon 358 -> AsiaII_5_Bangladesh_Jessore_AJ748384_AJ748384.1
+      Taxon 359 -> AsiaII_5_Bangladesh_Joydebpur_AJ748395_AJ748395.1
+      Taxon 360 -> AsiaII_5_India_New_Delhi_AM408901_AM408901.1
+      Taxon 361 -> AsiaII_5_Bangladesh_Chapai_AJ748391_AJ748391.1
+      Taxon 362 -> AsiaII_5_India_Karnataka_AJ748379_AJ748379.1
+      Taxon 363 -> AsiaII_5_India_DQ116673_DQ116673.1
+      Taxon 364 -> AsiaII_5_India_AF418666_AF418666.1
+      Taxon 365 -> AsiaII_5_India_Andhra_Pradesh_HM590144_HM590144.1
+      Taxon 366 -> AsiaII_6_China_Yunnan_EU192052_EU192052.1
+      Taxon 367 -> AsiaII_6_China_Yunnan_EU192054_EU192054.1
+      Taxon 368 -> AsiaII_6_China_Guangxi_HM137338_HM137338.1
+      Taxon 369 -> AsiaII_6_China_Guangxi_HM137352_HM137352.1
+      Taxon 370 -> AsiaII_6_Japan_Okinawa_AB308120_AB308120.1
+      Taxon 371 -> AsiaII_6_Japan_Kagoshima_AB440788_AB440788.1
+      Taxon 372 -> AsiaII_6_Japan_Okinawa_AB308123_AB308123.1
+      Taxon 373 -> AsiaII_6_Japan_Okinawa_AB308124_AB308124.1
+      Taxon 374 -> AsiaII_6_China_AJ784261_AJ784261.1
+      Taxon 375 -> AsiaII_6_Taiwan_DQ174520_DQ174520.1
+      Taxon 376 -> AsiaII_6_Japan_Okinawa_AB308125_AB308125.1
+      Taxon 377 -> AsiaII_6_Japan_Okinawa_AB308126_AB308126.1
+      Taxon 378 -> AsiaII_7_China_Guangzhou_AY686064_AY686064.1
+      Taxon 379 -> AsiaII_7_Taiwan_Nantou_AY686075_AY686075.1
+      Taxon 380 -> AsiaII_7_India_AJ748375_AJ748375.1
+      Taxon 381 -> AsiaII_7_Taiwan_Kaohsiung_DQ174521_DQ174521.1
+      Taxon 382 -> AsiaII_7_India_Madras_DQ116660_DQ116660.1
+      Taxon 383 -> AsiaII_7_India_Madras_DQ116661_DQ116661.1
+      Taxon 384 -> AsiaII_7_India_Mararathwada_DQ116662_DQ116662.1
+      Taxon 385 -> AsiaII_7_India_Hyderabad_DQ116650_DQ116650.1
+      Taxon 386 -> AsiaII_7_China_Guangdong_DQ174523_DQ174523.1
+      Taxon 387 -> AsiaII_7_India_AJ748372_AJ748372.1
+      Taxon 388 -> AsiaII_7_China_Fujian_GQ139492_GQ139492.1
+      Taxon 389 -> AsiaII_7_India_AJ748378_AJ748378.1
+      Taxon 390 -> AsiaII_7_Taiwan_DQ174522_Indonesia_DQ174522.1
+      Taxon 391 -> AsiaII_7_India_Tamil_Nadu_Coimbatore_AM408899_AM408899.1
+      Taxon 392 -> AsiaII_9_China_Hunan_HM137313_HM137313.1
+      Taxon 393 -> AsiaII_9_Hunan_HM137345_HM137345.1
+      Taxon 394 -> AsiaII_4_China_Guangdong_AY686083_AY686083.1
+      Taxon 395 -> AsiaII_3_China_Zhejiang_AJ867556_AJ867556.1
+      Taxon 396 -> AsiaII_3_China_Guangxi_EU192045_EU192045.1
+      Taxon 397 -> AsiaII_3_China_AJ783706_AJ783706.1
+      Taxon 398 -> AsiaII_3_China_Zhejiang_DQ309074_DQ309074.1
+      Taxon 399 -> AsiaII_3_China_ZHJ1_DQ309075_DQ309075.1
+      Taxon 400 -> AsiaII_2_China_Jiangsu_AY686088_AY686088.1
+      Taxon 401 -> AsiaII_1_Pakistan_AJ510057_AJ510057.1
+      Taxon 402 -> AsiaII_1_Pakistan_AJ510065_AJ510065.1
+      Taxon 403 -> AsiaII_1_India_Nagpur_JN855576_JN855576.1
+      Taxon 404 -> AsiaII_1_India_Andhra_Pradesh_HM590143_HM590143.1
+      Taxon 405 -> AsiaII_1_India_JN703450_JN703450.1
+      Taxon 406 -> AsiaII_1_Bangladesh_AJ748394_AJ748394.1
+      Taxon 407 -> AsiaII_1_India_Punjab_HM590140_HM590140.1
+      Taxon 408 -> AsiaII_1_India_New_Dehli_HM590142_HM590142.1
+      Taxon 409 -> AsiaII_1_Bangladesh_AJ748385_AJ748385.1
+      Taxon 410 -> AsiaII_1_India_Tamilnadu_HM590141_HM590141.1
+      Taxon 411 -> AsiaII_1_India_Punjab_HM590135_HM590135.1
+      Taxon 412 -> AsiaII_1_India_JN703452_JN703452.1
+      Taxon 413 -> AsiaII_1_India_JX827725_JX827725.1
+      Taxon 414 -> AsiaII_1_Pakistan_AY686094_AY686094.1
+      Taxon 415 -> AsiaII_1_Pakistan_GU585370_GU585370.1
+      Taxon 416 -> AsiaII_1_China_Guangxi_EU192047_EU192047.1
+      Taxon 417 -> AsiaII_1_India_Haryana_HM590124_HM590124.1
+      Taxon 418 -> AsiaII_1_India_JX827726_JX827726.1
+      Taxon 419 -> AsiaII_1_India_Punjab_HM590133_HM590133.1
+      Taxon 420 -> AsiaII_1_India_Rajasthan_HM590138_HM590138.1
+      Taxon 421 -> AsiaII_1_China_Guangdong_HM137326_HM137326.1
+      Taxon 422 -> AsiaII_1_India_Punjab_HM590132_HM590132.1
+      Taxon 423 -> AsiaII_1_India_Rajasthan_HM590134_HM590134.1
+      Taxon 424 -> AsiaII_1_India_Uttar_Pradesh_HM590139_HM590139.1
+      Taxon 425 -> AsiaII_1_Pakistan_FJ710473_FJ710473.1
+      Taxon 426 -> AsiaII_1_China_Hainan_EU192065_EU192065.1
+      Taxon 427 -> AsiaII_1_China_Hainan_HM137337_HM137337.1
+      Taxon 428 -> AsiaII_1_India_Punjab_HM590137_HM590137.1
+      Taxon 429 -> AsiaII_1_China_ZHJ2_Zhejiang_DQ309077_DQ309077.1
+      Taxon 430 -> AsiaII_1_India_Akola_JN855567_JN855567.1
+      Taxon 431 -> AsiaII_1_India_JN703453_JN703453.1
+      Taxon 432 -> AsiaII_1_India_Ludhiana_JN855574_JN855574.1
+      Taxon 433 -> AsiaII_1_China_Zhejiang_AJ867557_AJ867557.1
+      Taxon 434 -> AsiaII_1_Syria_FJ802389_FJ802389.1
+      Taxon 435 -> AsiaII_1_India_JN703449_JN703449.1
+      Taxon 436 -> AsiaII_1_India_JX827727_JX827727.1
+      Taxon 437 -> AsiaII_1_India_Punjab_HM590126_HM590126.1
+      Taxon 438 -> AsiaII_1_India_Punjab_HM590131_HM590131.1
+      Taxon 439 -> AsiaII_1_India_Surat_JN855578_JN855578.1
+      Taxon 440 -> AsiaII_1_India_Varanasi_JN855579_JN855579.1
+      Taxon 441 -> AsiaII_1_Pakistan_GU585375_GU585375.1
+      Taxon 442 -> AsiaII_1_Pakistan_GU585369_GU585369.1
+      Taxon 443 -> AsiaII_1_India_Bhatinda_JN855569_JN855569.1
+      Taxon 444 -> AsiaII_1_India_Punjab_HM590129_HM590129.1
+      Taxon 445 -> AsiaII_1_Syria_FJ802393_FJ802393.1
+      Taxon 446 -> AsiaII_1_Pakistan_AJ510058_AJ510058.1
+      Taxon 447 -> AsiaII_1_Pakistan_GU585373_GU585373.1
+      Taxon 448 -> AsiaII_11_India_Andhra_Pradesh_HM590147_HM590147.1
+      Taxon 449 -> AsiaII_11_India_Gujarat_HM590146_HM590146.1
+      Taxon 450 -> AsiaII_8_India_Karnataka_AM040593_AM040593.1
+      Taxon 451 -> AsiaII_8_India_Andhra_Pradesh_HM590181_HM590181.1
+      Taxon 452 -> AsiaII_8_India_AJ748358_AJ748358.1
+      Taxon 453 -> AsiaII_8_India_AJ748374_AJ748374.1
+      Taxon 454 -> AsiaII_8_India_Karnataka_HM590182_HM590182.1
+      Taxon 455 -> AsiaII_8_India_Karnataka_HM590185_HM590185.1
+      Taxon 456 -> AsiaII_8_India_AJ748362_AJ748362.1
+      Taxon 457 -> AsiaII_8_India_Uttarahand_HM590188_HM590188.1
+      Taxon 458 -> AsiaII_8_India_Chitradurga_AM408898_AM408898.1
+      Taxon 459 -> AsiaII_8_India_Karnataka_HM590184_HM590184.1
+      Taxon 460 -> AsiaII_8_India_AJ748357_AJ748357.1
+      Taxon 461 -> Australia_DQ130052_DQ130052.1
+      Taxon 462 -> Australia_Bundaberg_GU086328_GU086328.1
+      Taxon 463 -> Australia_II_KC109797.1
+      Taxon 464 -> Australia_II_JX416166.1
+      Taxon 465 -> AsiaIII_Japan_AB440792_AB440792.1
+      Taxon 466 -> AsiaIII_China_Taiwan_DQ174527_DQ174527.1
+      Taxon 467 -> AsiaIII_Taiwan_DQ174528_DQ174528.1
+      Taxon 468 -> Asia1_India_New_Dehli_DQ116663_DQ116663.1
+      Taxon 469 -> Asia1_India_New_Dehli_DQ116664_DQ116664.1
+      Taxon 470 -> Asia1_India_Ahmedabad_DQ116641_DQ116641.1
+      Taxon 471 -> Asia1_India_AM040596_AM040596.1
+      Taxon 472 -> Asia1_China_Guangdong_DQ986959_DQ986959.1
+      Taxon 473 -> Asia1_India_Hyderabad_DQ116655_DQ116655.1
+      Taxon 474 -> Asia1_India_Andre_Pradesh_HM590157_HM590157.1
+      Taxon 475 -> Asia1_India_Bihar_HM590178_HM590178.1
+      Taxon 476 -> Asia1_India_Karnataka_HM590153_HM590153.1
+      Taxon 477 -> Asia1_India_Andre_Pradesh_HM590169_HM590169.1
+      Taxon 478 -> Asia1_India_Coimbatore_DQ116646_DQ116646.1
+      Taxon 479 -> Asia1_India_AJ748369_AJ748369.1
+      Taxon 480 -> Asia1_India_AJ748360_AJ748360.1
+      Taxon 481 -> Asia1_India_AJ748365_AJ748365.1
+      Taxon 482 -> Asia1_India_AJ748370_AJ748370.1
+      Taxon 483 -> Asia1_India_Bangalore_AM408895_AM408895.1
+      Taxon 484 -> Asia1_India_JN703455_JN703455.1
+      Taxon 485 -> Asia1_India_Maharastra_HM590150_HM590150.1
+      Taxon 486 -> Asia1_India_Maharastra_HM590160_HM590160.1
+      Taxon 487 -> Asia1_Malaysia_AY686093_AY686093.1
+      Taxon 488 -> Asia1_Bangladesh_Jessore_AJ748383_AJ748383.1
+      Taxon 489 -> Asia1_India_Andre_Pradesh_HM590148_HM590148.1
+      Taxon 490 -> Asia1_India_Andre_Pradesh_HM590156_HM590156.1
+      Taxon 491 -> Asia1_India_JX827728_JX827728.1
+      Taxon 492 -> Asia1_India_Tamilnadu_HM590152_HM590152.1
+      Taxon 493 -> Asia1_Thailand_AF164671_AF164671.1
+      Taxon 494 -> Asia1_India_HM590154_HM590154.1
+      Taxon 495 -> Asia1_Thailand_EF528552_EF528552.1
+      Taxon 496 -> Asia1_India_Uttar_Pradesh_HM590163_HM590163.1
+      Taxon 497 -> Asia1_Bangladesh_Biougra_AJ748388_AJ748388.1
+      Taxon 498 -> Asia1_Bangladesh_Chitagong_AJ748398_AJ748398.1
+      Taxon 499 -> Asia1_China_Hainan_HM137323_HM137323.1
+      Taxon 500 -> Asia1_China_Yunnan_HM137330_HM137330.1
+      Taxon 501 -> Asia1_India_AJ748359_AJ748359.1
+      Taxon 502 -> Asia1_India_AJ748371_AJ748371.1
+      Taxon 503 -> Asia1_India_Andre_Pradesh_HM590168_HM590168.1
+      Taxon 504 -> Asia1_India_Andre_Pradesh_HM590171_HM590171.1
+      Taxon 505 -> Asia1_India_Gujarat_HM590174_HM590174.1
+      Taxon 506 -> Asia1_India_Haryana_HM590172_HM590172.1
+      Taxon 507 -> Asia1_India_JN703454_JN703454.1
+      Taxon 508 -> Asia1_India_Maharastra_HM590159_HM590159.1
+      Taxon 509 -> Asia1_India_Maharastra_HM590161_HM590161.1
+      Taxon 510 -> Asia1_India_Tamilnadu_HM590180_HM590180.1
+      Taxon 511 -> Asia1_India_Uttar_Pradesh_HM590162_HM590162.1
+      Taxon 512 -> Asia1_India_Uttar_Pradesh_HM590173_HM590173.1
+      Taxon 513 -> Asia1_India_AJ748361_AJ748361.1
+      Taxon 514 -> Asia1_India_Indore_JN855572_JN855572.1
+      Taxon 515 -> Asia1_Indonesia_HE653706_HE653706.1
+      Taxon 516 -> Asia1_Indonesia_HE653710_HE653710.1
+      Taxon 517 -> Asia1_China_Guangxi_EU192044_EU192044.1
+      Taxon 518 -> Asia1_Indonesia_AB248260_AB248260.1
+      Taxon 519 -> Asia1_Indonesia_HE653683_HE653683.1
+      Taxon 520 -> Asia1_Indonesia_HE653704_HE653704.1
+      Taxon 521 -> Asia1_Singapore_AY686095_AY686095.1
+      Taxon 522 -> Asia1_Indonesia_AB248262_AB248262.1
+      Taxon 523 -> Asia1_Pakistan_AJ510061_AJ510061.1
+      Taxon 524 -> Asia1_Pakistan_AJ510078_AJ510078.1
+      Taxon 525 -> Tetraleurodes_acaciae_AY521262_AY521262.1
+      Taxon 526 -> Aleurotrachelus_camelliae_AB536801_AB536801.1
+      Taxon 527 -> Trialeurodes_vaparariorum_JF693935_JF693935.1
+      Taxon 528 -> Trialeurodes_vaporariorum_AY521265_AY521265.1
+      Taxon 529 -> Trialeurodes_vaparariorum_AM179446_AM179446.1
+      Taxon 530 -> Aleurodicus_dispersus_AJ748380_AJ748380.1
+      Taxon 531 -> Aleurodicus_dugesii_AY521251_AY521251.1
+      Taxon 532 -> Vasdavidius_concursus_AY648941_AY648941.1
+      Taxon 533 -> Neomaskellia_andropogonis_AY572539_AY572539.1
+      Taxon 534 -> Trialeurodes_abutilonea_AY057221_AY057221.1
+      Taxon 535 -> Trialeurodes_lauri_AM179438_AM179438.1
+      Taxon 536 -> Trialeurodes_lauri_AM179436_AM179436.1
+      Taxon 537 -> Trialeurodes_lauri_AM179440_AM179440.1
+      Taxon 538 -> Trialeurodes_lauri_AM179435_AM179435.1
+      Taxon 539 -> Trialeurodes__ricini_AM179431_AM179431.1
+      Taxon 540 -> Trialeurodes_ricini_AM179429_AM179429.1
+      Taxon 541 -> Trialeurodes__ricini_AM179423_AM179423.1
+      Taxon 542 -> unknown_1
+      Taxon 543 -> unknown_2
+      Taxon 544 -> unknown_3
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1712521548
+      Setting output file names to "../nexus_files/boykin_and_de_barro_alignment.nexus.run<i>.<p|t>"
+   Exiting data block
+   Reading mrbayes block
+      Setting autoclose to yes
+      Setting nowarnings to yes
+      Setting number of generations to 1000000
+      WARNING: Reallocation of zero size attempted. This is probably a bug. Problems may follow.
+      WARNING: Reallocation of zero size attempted. This is probably a bug. Problems may follow.
+      Setting number of runs to 4
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "../nexus_files/boykin_and_de_barro_alignment.nexus.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Setting number of chains to 4
+      Setting 'Starttree' to "Random"
+      Successfully set chain parameters
+      Setting chain output file names to "mb_1n16ppn_boykin_and_de_barro_outfile.run<i>.<p/t>"
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 8509179840
+      Seed = 1477489841
+      Swapseed = 1712521548
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 1
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Equal
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Statefreq           1
+         Ratemultiplier      2
+         Topology            3
+         Brlens              4
+         ---------------------
+
+         1 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         2 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         3 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         4 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+      There must be at least as many chains as MPI processors
+      Error in command "Mcmc"
+      There was an error on at least one processor
+      The error occurred when reading char. 6-6 on line 558
+         in the file '../nexus_files/boykin_and_de_barro_alignment.nexus'
+
+   Returning execution to command line ...
+
+   Error in command "Execute"
+   Will exit with signal 1 (error) because quitonerror is set to yes
+   If you want control to be returned to the command line on error,
+   use 'mb -i <filename>' (i is for interactive) or use 'set quitonerror=no'
+
+---------------------------------------
+Begin Slurm Epilog: Apr-07-2024 16:25:49
+Job ID:        571167
+Array Job ID:  _4294967294
+User ID:       akim466
+Account:       coc
+Job name:      whitefly_cpu_beagle_24
+Resources:     cpu=24,mem=182808M,node=1
+Rsrc Used:     cput=00:01:12,vmem=2648K,walltime=00:00:03,mem=0,energy_used=0
+Partition:     coc-cpu
+Nodes:         atl1-1-03-007-19-1
+---------------------------------------
