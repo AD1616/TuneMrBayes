@@ -1,0 +1,74 @@
+[ID: 7499451737]
+
+      Below are rough plots of the generation (x-axis) versus the log   
+      probability of observing the data (y-axis). You can use these     
+      graphs to determine what the burn in for your analysis should be. 
+      When the log probability starts to plateau you may be at station- 
+      arity. Sample trees and parameters after the log probability      
+      plateaus. Of course, this is not a guarantee that you are at sta- 
+      tionarity. Also examine the convergence diagnostics provided by   
+      the 'sump' and 'sumt' commands for all the parameters in your     
+      model. Remember that the burn in is the number of samples to dis- 
+      card. There are a total of ngen / samplefreq samples taken during 
+      a MCMC analysis.                                                  
+
+      Overlay plot for all 4 runs:
+      (1 = Run number 1; 2 = Run number 2 etc.; * = Several runs)
+
+   +------------------------------------------------------------+ -47036.00
+   |                33333333333*********************************|
+   |               3  444444444     22222   11111111            |
+   |    2222222222****22222222222222    1111                    |
+   |  22        **4                  111                        |
+   | 2         *              1111111                           |
+   |2         3                                                 |
+   |     4444*4              1                                  |
+   |    43333      1 11111111                                   |
+   |  4**1111111111 1                                           |
+   | 413                                                        |
+   |  3                                                         |
+   | 1                                                          |
+   |1                                                           |
+   |43                                                          |
+   |3                                                           |
+   +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+ -61875.02
+   ^                                                            ^
+   250000                                                       1000000
+
+      Estimated marginal likelihoods for runs sampled in files
+         "mb_1n16ppn_boykin_and_de_barro_outfile.run1.p", "mb_1n16ppn_boykin_and_de_barro_outfile.run2.p", etc:
+      Run   Arithmetic mean   Harmonic mean
+      --------------------------------------
+        1      -47888.75 *       -59293.54 *
+        2      -47112.90 *       -52451.97 *
+        3      -47015.78 *       -62002.84 *
+        4      -47847.13 *       -63252.64 *
+      --------------------------------------
+      --------------------------------------
+      TOTAL    -47016.11 *       -63252.64 *
+      --------------------------------------
+      * These estimates may be unreliable because 
+        some extreme values were excluded
+
+
+      Model parameter summaries over all 4 runs sampled in files
+         "mb_1n16ppn_boykin_and_de_barro_outfile.run1.p", "mb_1n16ppn_boykin_and_de_barro_outfile.run2.p" etc:
+         (Summaries are based on a total of 3004 samples from 4 runs)
+         (Each run produced 1001 samples of which 751 samples were included)
+
+                                                 95% Cred. Interval
+                                               ----------------------
+      Parameter       Mean        Variance       Lower         Upper         Median       PSRF *
+      -----------------------------------------------------------------------------------------
+      TL            7.924649      0.485333      7.194000      9.891000      7.709000      1.119
+      pi(A)         0.224987      0.000026      0.215248      0.235306      0.224734      1.033
+      pi(C)         0.240717      0.000041      0.226549      0.252567      0.241263      1.016
+      pi(G)         0.235618      0.000033      0.224161      0.246161      0.235628      1.007
+      pi(T)         0.298678      0.000126      0.281130      0.323070      0.297262      1.014
+      -----------------------------------------------------------------------------------------
+      * Convergence diagnostic (PSRF = Potential scale reduction factor [Gelman
+        and Rubin, 1992], uncorrected) should approach 1 as runs converge. The
+        values may be unreliable if you have a small number of samples. PSRF should
+        only be used as a rough guide to convergence since all the assumptions
+        that allow one to interpret it as a scale reduction factor are not met in
+        the phylogenetic context.
