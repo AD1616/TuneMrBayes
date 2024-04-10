@@ -18,7 +18,7 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 
 # Experiment 1
 **Briefly describe your scaling results and why certain builds perform better (i.e., faster completion time).**
-* Serial (rsrc: mem-per-cpu=0, node=1, exclusive)
+* Serial (rsrc: mem-per-cpu=0, node=1, exclusive); baseline
 
 | ntasks | cpus-per-task | mcmc time | walltime |
 | ------ | ------------- | --------- | -------- |
@@ -26,18 +26,18 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 
 * MPI without Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
 
-| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | CPU-core effeciency |
 | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
-| 1      | 1             | 4:17:03   | 4:18:42  | 1.00x        | 100%                |
-| 2      | 1             | 2:05:02   | 2:06:39  | 2.06x        | 103% (!)            |
-| 4      | 1             | 1:09:18   | 1:10:55  | 3.71x        | 93%                 |
-| 8      | 1             | 0:50:42   | 0:52:19  | 5.07x        | 63%                 |
-| 16     | 1             | 0:32:15   | 0:33:52  | 7.97x        | 50%                 |
+| 1      | 1             | 4:17:03   | 4:18:42  | 1.08x        | 108%                |
+| 2      | 1             | 2:05:02   | 2:06:39  | 2.22x        | 111%                |
+| 4      | 1             | 1:09:18   | 1:10:55  | 4.01x        | 100%                |
+| 8      | 1             | 0:50:42   | 0:52:19  | 5.48x        | 68%                 |
+| 16     | 1             | 0:32:15   | 0:33:52  | 8.61x        | 54%                 |
 
 * MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
   * Note: runs did not converge
 
-| beagle_ver | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| beagle_ver | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | CPU-core effeciency |
 | ---------- | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
 | v3.1.2     | 2      | 1             | 0:57:00   | 0:58:53  
 | v3.1.2     | 4      | 1             | 0:30:35   | 0:32:21
@@ -57,10 +57,10 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 * Hybrid (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, cpus-per-task=#, exclusive); using 16 hyperthreaded CPU-cores
   * Note: runs did not converge
 
-| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
-| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
-| 1      | 16            | 31411     | 8:59:47
-| 2      | 8             | 4782      | 1:36:19
-| 4      | 4             | 2593      | 0:58:18
-| 8      | 2             | 2711      | 0:59:45
-| 16     | 1             | 2804      | 1:02:08
+| ntasks | cpus-per-task | mcmc time (s) | walltime | mcmc speedup | parallel effeciency |
+| ------ | ------------- | ------------- | -------- | ------------ | ------------------- |
+| 1      | 16            | 31411         | 8:59:47
+| 2      | 8             | 4782          | 1:36:19
+| 4      | 4             | 2593          | 0:58:18
+| 8      | 2             | 2711          | 0:59:45
+| 16     | 1             | 2804          | 1:02:08
