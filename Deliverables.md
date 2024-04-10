@@ -15,3 +15,31 @@ Whiteflies are significant pest and invasive species, damaging food and fiber cr
 **From the perspective of an evolutionary biologist, why is it necessary to improve the phylogeny of a model system such as the volvocine algae?**
 
 One of the primary reasons to study volvocine algae is to understand the evolution of multicellularity in life. Multicellularity is one of the most important developments in life because it is what brought about most of modern visible life on Earth; understanding how it came about will in turn help us gain a deeper understanding of evolution in general. Volvocine algae are an example of a species that can be studied to gain insights into multicellularity, because they range from single celled all the way up to 50,000 celled organisms, depending on the species. Because of this range, and particularly the inclusion of single celled species, the volvocine algae provide a good model for the origin of multicellularity - hence the reason they are called a "model system". In order to gain a fuller understanding of the origin of multicellularity, cell biology is superimposed on molecular phylogeny - which only works if the phylogeny is as accurate as possible. This is why it is important to improve the phylogeny of a model system such as the volvocine algae.
+
+# Experiment 1
+**Briefly describe your scaling results and why certain builds perform better (i.e., faster completion time).**
+* Serial (rsrc: mem-per-cpu=0, node=1, exclusive)
+
+| ntasks | cpus-per-task | mcmc time | walltime |
+| ------ | ------------- | --------- | -------- |
+| 1      | 1             | 4:37:38   | 4:39:14  |
+
+* MPI without Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
+
+| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| 1      | 1             | 4:17:03   | 4:18:42  | 1.00x        | 100%                |
+| 2      | 1             | 2:05:02   | 2:06:39  | 2.06x        | 103% (!)            |
+| 4      | 1             | 1:09:18   | 1:10:55  | 3.71x        | 93%                 |
+| 8      | 1             | 0:50:42   | 0:52:19  | 5.07x        | 63%                 |
+| 16     | 1             | 0:32:15   | 0:33:52  | 7.97x        | 50%                 |
+
+* MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
+  * Note: runs did not converge
+
+| beagle_ver| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| --------- | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| v3.1.2    | 2      | 1             | 0:57:00   | 0:58:53  |
+| v3.1.2    | 4      | 1             | 0:30:35   | 0:32:21
+| v3.1.2    | 8      | 1             | 0:23:27   | 0:25:14
+| v3.1.2    | 16     | 1             | 0:20:59   | 0:22:46
