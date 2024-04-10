@@ -37,9 +37,18 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 * MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
   * Note: runs did not converge
 
-| beagle_ver| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
-| --------- | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
-| v3.1.2    | 2      | 1             | 0:57:00   | 0:58:53  |
-| v3.1.2    | 4      | 1             | 0:30:35   | 0:32:21
-| v3.1.2    | 8      | 1             | 0:23:27   | 0:25:14
-| v3.1.2    | 16     | 1             | 0:20:59   | 0:22:46
+| beagle_ver | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| ---------- | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| v3.1.2     | 2      | 1             | 0:57:00   | 0:58:53  
+| v3.1.2     | 4      | 1             | 0:30:35   | 0:32:21
+| v4.0.1     | 4      | 1             | 0:41:27   | 0:43:13
+| v3.1.2     | 8      | 1             | 0:23:27   | 0:25:14
+| v3.1.2     | 16     | 1             | 0:20:59   | 0:22:46
+
+* MPI with Beagle, GPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, gres=gpu:V100:1, exclusive)
+
+|  beagle_ver  | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| ------------ | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| v3.1.2 (GPU) | 1      | 1             | 2:54:15   | 2:56:17
+| v3.1.2 (GPU) | 2      | 1             | 1:33:30   | 1:35:26  
+| v3.1.2 (CPU) | 4      | 1             | 0:46:59   | 0:48:58
