@@ -45,10 +45,22 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 | v3.1.2     | 8      | 1             | 0:23:27   | 0:25:14
 | v3.1.2     | 16     | 1             | 0:20:59   | 0:22:46
 
-* MPI with Beagle, GPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, gres=gpu:V100:1, exclusive)
+* MPI with Beagle, 1 GPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, gres=gpu:V100:1, exclusive)
+  * Note: runs did not converge
 
 |  beagle_ver  | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
 | ------------ | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
 | v3.1.2 (GPU) | 1      | 1             | 2:54:15   | 2:56:17
 | v3.1.2 (GPU) | 2      | 1             | 1:33:30   | 1:35:26  
 | v3.1.2 (CPU) | 4      | 1             | 0:46:59   | 0:48:58
+
+* Hybrid (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, cpus-per-task=#, exclusive); using 16 hyperthreaded CPU-cores
+  * Note: runs did not converge
+
+| ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| 1      | 16            | 31411     | 8:59:47
+| 2      | 8             | 4782      | 1:36:19
+| 4      | 4             | 2593      | 0:58:18
+| 8      | 2             | 2711      | 0:59:45
+| 16     | 1             | 2804      | 1:02:08
