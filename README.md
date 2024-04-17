@@ -85,6 +85,16 @@ The scaling does not appear to be linear when more CPUs are added. As the number
 **For Hybrid MrBayes, describe how you allocated MPI processes and OpenMP threads to
 increase performance.**
 
+**Consensus Tree Visualization**
+
+**Results for Unknown Strains**
+| Strain | Country/Continent | Genus | Species |
+| ------ | ----------------- | ----- | ------- |
+| Unknown 1 | Columbia | 
+| Unknown 2 | Japan    |
+| Unknown 3 | Cameroon |
+
+
 # Experiment 2
 **Briefly describe your scaling results and why certain builds perform better (i.e., faster completion time).**
 
