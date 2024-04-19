@@ -124,10 +124,10 @@ Below are the subgraphs of the consensus tree that contain unknown1, unknown2, a
 
 | ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
 | ------ | ------------- | --------- | ------------ | ------------------- | 
-| 2      | 1             |           |              |                     |
-| 4      | 1             |           |              |                     |
-| 8      | 1             |           |              |                     |
-| 16     | 1             |           |              |                     |
+| 2      | 1             | 448:26:24      |              |                     |
+| 4      | 1             | 69:39:09       |              |                     |
+| 8      | 1             | 57:09:54       |              |                     |
+| 16     | 1             | 50:35:35       |              |                     |
 
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
