@@ -148,4 +148,8 @@ This graph looks almost identical to what we saw in Experiment 1, just with larg
 **For Hybrid MrBayes, describe how you allocated MPI processes and OpenMP threads to
 increase performance.**
 
+**Consensus Tree Visualization**
+
+![alt text](experiment2_fig.png)
+
 
