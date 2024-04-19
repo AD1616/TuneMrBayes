@@ -87,6 +87,7 @@ The scaling does not appear to be linear when more CPUs are added. As the number
 increase performance.**
 
 **Consensus Tree Visualization**
+
 Below are the subgraphs of the consensus tree that contain unknown1, unknown2, and unknown3 respectively.
 
 ![alt text](experiment1_fig1.png)
