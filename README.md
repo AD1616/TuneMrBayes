@@ -88,6 +88,14 @@ increase performance.**
 
 **Consensus Tree Visualization**
 
+![alt text](experiment1_fig1)
+
+
+![alt text](experiment1_fig2)
+
+
+![alt text](experiment1_fig3)
+
 **Results for Unknown Strains**
 | Strain | Country/Continent | Genus | Species |
 | ------ | ----------------- | ----- | ------- |
@@ -138,4 +146,5 @@ This graph looks almost identical to what we saw in Experiment 1, just with larg
 
 **For Hybrid MrBayes, describe how you allocated MPI processes and OpenMP threads to
 increase performance.**
+
 
