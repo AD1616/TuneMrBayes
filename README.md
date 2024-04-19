@@ -64,6 +64,8 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 | 8      | 2             | 2711          | 0:59:45  | 6.14x        | 38%                 |
 | 16     | 1             | 2804          | 1:02:08  | 5.94x        | 37%                 |
 
+Serial obviously performed the slowest because it could only use one cpu. MPI without Beagle was next, because it could take advantage of multiple cpus, which was a dramatic speedup since MrBayes is extremely parallel. MPI with Beagle with cpus actually saw even faster results, which is likely due to optimizations for Bayesian calculations. MPI with Beagle with gpus was better was using 1 or 2 processors, but it then was preferable to use cpus instead. This is likely due to memory constraints. 
+
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
 To produce the scaling graph, we ran the program again using 2, 4, 8, and 16 cpus on the MPI version of MrBayes without Beagle. Here are the results:
@@ -97,16 +99,36 @@ increase performance.**
 # Experiment 2
 **Briefly describe your scaling results and why certain builds perform better (i.e., faster completion time).**
 
+**Note: We did not include walltime here as the time for mcmc was recorded through the predicted time to completion.**
+
+* MPI without Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
+
+| ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
+| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| 2      | 1             | 285:49:30 |          |                 |
+| 4      | 1             | 148:39:58 |          |                 |
+| 8      | 1             | 89:54:36  |          |                  |
+| 16     | 1             | 47:27:09  |          |                  |
+
+* MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
+
+| ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
+| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| 2      | 1             |  |          |                 |
+| 4      | 1             |  |          |                 |
+| 8      | 1             |   |          |                  |
+| 16     | 1             |   |          |                  |
+
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
-Similar to experiment 1, to produce the scaling graph, we ran the program again using 2, 4, 8, and 16 cpus on the MPI version of MrBayes without Beagle. Here are the results:
+Similar to experiment 1, to produce the scaling graph, we used the data for 2, 4, 8, and 16 cpus on the MPI version of MrBayes without Beagle. Here are the results:
 
 | # cpus | time (seconds) |
 | ------ | -------------- |
 | 2      | 1028970        |
 | 4      | 535198         |
 | 8      | 323676         |
-| 16      | 170829        |
+| 16     | 170829        |
 
 ![alt text](experiment2_plot_image.png)
 
