@@ -88,13 +88,13 @@ increase performance.**
 
 **Consensus Tree Visualization**
 
-![alt text](experiment1_fig1)
+![alt text](experiment1_fig1.png)
 
 
-![alt text](experiment1_fig2)
+![alt text](experiment1_fig2.png)
 
 
-![alt text](experiment1_fig3)
+![alt text](experiment1_fig3.png)
 
 **Results for Unknown Strains**
 | Strain | Country/Continent | Genus | Species |
