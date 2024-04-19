@@ -104,7 +104,7 @@ increase performance.**
 * MPI without Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
 
 | ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
-| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| ------ | ------------- | --------- | -------- | ------------ |
 | 2      | 1             | 285:49:30 |          |                 |
 | 4      | 1             | 148:39:58 |          |                 |
 | 8      | 1             | 89:54:36  |          |                  |
@@ -113,11 +113,11 @@ increase performance.**
 * MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
 
 | ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
-| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
-| 2      | 1             |  |          |                 |
-| 4      | 1             |  |          |                 |
-| 8      | 1             |   |          |                  |
-| 16     | 1             |   |          |                  |
+| ------ | ------------- | --------- | ------------ | ------------------- | 
+| 2      | 1             |           |              |                     |
+| 4      | 1             |           |              |                     |
+| 8      | 1             |           |              |                     |
+| 16     | 1             |           |              |                     |
 
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
