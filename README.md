@@ -39,31 +39,32 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 
 | beagle_ver | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | CPU-core effeciency |
 | ---------- | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
-| v3.1.2     | 2      | 1             | 0:57:00   | 0:58:53  
-| v3.1.2     | 4      | 1             | 0:30:35   | 0:32:21
-| v4.0.1     | 4      | 1             | 0:41:27   | 0:43:13
-| v3.1.2     | 8      | 1             | 0:23:27   | 0:25:14
-| v3.1.2     | 16     | 1             | 0:20:59   | 0:22:46
+| v3.1.2     | 2      | 1             | 0:57:00   | 0:58:53  | 4.87x        | 244%                |
+| v3.1.2     | 4      | 1             | 0:30:35   | 0:32:21  | 9.08x        | 227%                |
+| v4.0.1     | 4      | 1             | 0:41:27   | 0:43:13  | 6.70x        | 167%                |
+| v3.1.2     | 8      | 1             | 0:23:27   | 0:25:14  | 11.8x        | 148%                |
+| v3.1.2     | 16     | 1             | 0:20:59   | 0:22:46  | 13.2x        | 83%                 |
 
 * MPI with Beagle, 1 GPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, gres=gpu:V100:1, exclusive)
   * Note: runs did not converge
 
-|  beagle_ver  | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | parallel effeciency |
+|  beagle_ver  | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | CPU-core efficiency |
 | ------------ | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
 | v3.1.2 (GPU) | 1      | 1             | 2:54:15   | 2:56:17
 | v3.1.2 (GPU) | 2      | 1             | 1:33:30   | 1:35:26  
-| v3.1.2 (CPU) | 4      | 1             | 0:46:59   | 0:48:58
 
 * Hybrid (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, cpus-per-task=#, exclusive); using 16 hyperthreaded CPU-cores
   * Note: runs did not converge
 
-| ntasks | cpus-per-task | mcmc time (s) | walltime | mcmc speedup | parallel effeciency |
+| ntasks | cpus-per-task | mcmc time (s) | walltime | mcmc speedup | CPU-core efficiency |
 | ------ | ------------- | ------------- | -------- | ------------ | ------------------- |
-| 1      | 16            | 31411         | 8:59:47
-| 2      | 8             | 4782          | 1:36:19
-| 4      | 4             | 2593          | 0:58:18
-| 8      | 2             | 2711          | 0:59:45
-| 16     | 1             | 2804          | 1:02:08
+| 1      | 16            | 31411         | 8:59:47  | 0.53x        | 3%                  |
+| 2      | 8             | 4782          | 1:36:19  | 3.48x        | 22%                 |
+| 4      | 4             | 2593          | 0:58:18  | 6.42x        | 40%                 |
+| 8      | 2             | 2711          | 0:59:45  | 6.14x        | 38%                 |
+| 16     | 1             | 2804          | 1:02:08  | 5.94x        | 37%                 |
+
+Serial obviously performed the slowest because it could only use one cpu. MPI without Beagle was next, because it could take advantage of multiple cpus, which was a dramatic speedup since MrBayes is extremely parallel. MPI with Beagle with cpus actually saw even faster results, which is likely due to optimizations for Bayesian calculations. MPI with Beagle with gpus was better was using 1 or 2 processors, but it then was preferable to use cpus instead. This is likely due to memory constraints. 
 
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
@@ -74,7 +75,7 @@ To produce the scaling graph, we ran the program again using 2, 4, 8, and 16 cpu
 | 2      | 7854           |
 | 4      | 3947           |
 | 8      | 2868           |
-| 16      | 1832          |
+| 16     | 1832           |
 
 ![alt text](experiment1_plot_image.png)
 
@@ -85,19 +86,49 @@ The scaling does not appear to be linear when more CPUs are added. As the number
 **For Hybrid MrBayes, describe how you allocated MPI processes and OpenMP threads to
 increase performance.**
 
+**Consensus Tree Visualization**
+
+**Results for Unknown Strains**
+| Strain | Country/Continent | Genus | Species |
+| ------ | ----------------- | ----- | ------- |
+| Unknown 1 | Columbia | 
+| Unknown 2 | Japan    |
+| Unknown 3 | Cameroon |
+
+
 # Experiment 2
 **Briefly describe your scaling results and why certain builds perform better (i.e., faster completion time).**
 
+**Note: We did not include walltime here as the time for mcmc was recorded through the predicted time to completion.**
+
+* MPI without Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
+
+| ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
+| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| 2      | 1             | 285:49:30 |          |                 |
+| 4      | 1             | 148:39:58 |          |                 |
+| 8      | 1             | 89:54:36  |          |                  |
+| 16     | 1             | 47:27:09  |          |                  |
+
+* MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
+
+| ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
+| ------ | ------------- | --------- | -------- | ------------ | ------------------- |
+| 2      | 1             |  |          |                 |
+| 4      | 1             |  |          |                 |
+| 8      | 1             |   |          |                  |
+| 16     | 1             |   |          |                  |
+
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
-Similar to experiment 1, to produce the scaling graph, we ran the program again using 2, 4, 8, and 16 cpus on the MPI version of MrBayes without Beagle. Here are the results:
+Similar to experiment 1, to produce the scaling graph, we used the data for 2, 4, 8, and 16 cpus on the MPI version of MrBayes without Beagle. Here are the results:
 
 | # cpus | time (seconds) |
 | ------ | -------------- |
 | 2      | 1028970        |
 | 4      | 535198         |
 | 8      | 323676         |
-| 16      | 170829        |
+| 16     | 170829        |
 
 ![alt text](experiment2_plot_image.png)
 
