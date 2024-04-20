@@ -128,11 +128,44 @@ Below are the subgraphs of the consensus tree that contain unknown1, unknown2, a
 * MPI with Beagle, CPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, exclusive)
 
 | ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core effeciency |
-| ------ | ------------- | --------- | ------------ | ------------------- | 
-| 2      | 1             | 448:26:24      |              |                     |
-| 4      | 1             | 69:39:09       |              |                     |
-| 8      | 1             | 57:09:54       |              |                     |
-| 16     | 1             | 50:35:35       |              |                     |
+| ------ | ------------- | --------- | ------------ | ------------------- |
+| 2      | 1             | 448:26:24 |              |                     |
+| 4      | 1             | 69:39:09  |              |                     |
+| 8      | 1             | 57:09:54  |              |                     |
+| 16     | 1             | 50:35:35  |              |                     |
+
+* MPI with Beagle, 1 GPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, gres=gpu:V100:1, exclusive)
+  * Note: Runs into a seg fault, for both BEAGLE 3.1.2 and 4.0.1:
+
+```
+[atl1-1-02-010-33-0:87161:0:87161] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4)
+==== backtrace (tid:  87161) ====
+ 0 0x0000000000015fc4 beagle::gpu::cuda::BeagleGPUImpl<float>::resetScaleFactorsByPartition()  /storage/ice1/5/3/akim466/MrBayes-VIP-Module/beagle-lib-4.0.1/libhmsbeagle/GPU/BeagleGPUImpl.hpp:3277
+ 1 0x0000000000461147 LaunchBEAGLELogLikeMultiPartition()  ???:0
+ 2 0x0000000000458574 LaunchLogLikeForBeagleMultiPartition()  ???:0
+ 3 0x0000000000474218 LogLike()  ???:0
+ 4 0x000000000049a9af RunChain()  ???:0
+ 5 0x000000000049ec27 DoMcmc()  ???:0
+ 6 0x000000000041c25c ParseCommand()  ???:0
+ 7 0x000000000041c95f DoExecute()  ???:0
+ 8 0x000000000041c25c ParseCommand()  ???:0
+ 9 0x0000000000404435 CommandLine()  ???:0
+10 0x0000000000403f1a main()  ???:0
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000403fa9 _start()  ???:0
+=================================
+srun: error: atl1-1-02-010-33-0: task 0: Segmentation fault (core dumped)
+```
+
+* Hybrid (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, cpus-per-task=#, exclusive); using 16 hyperthreaded CPU-cores
+
+| ntasks | cpus-per-task | mcmc time | mcmc speedup | CPU-core efficiency |
+| ------ | ------------- | --------- | ------------ | ------------------- |
+| 1      | 16            | 760:20:29 |
+| 2      | 8             | 127:23:12 |
+| 4      | 4             | 34:36:51  |
+| 8      | 2             | 81:05:07  |
+| 16     | 1             | 42:40:59  |
 
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
@@ -153,6 +186,8 @@ This graph looks almost identical to what we saw in Experiment 1, just with larg
 
 **For Hybrid MrBayes, describe how you allocated MPI processes and OpenMP threads to
 increase performance.**
+
+Again as before, setting the number of runs == MPI processes and the number of chains <= OpenMP threads per process seems to be the best for performance. May be related to how the chains and processes are allocated.
 
 **Consensus Tree Visualization**
 
