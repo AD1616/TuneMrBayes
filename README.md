@@ -48,10 +48,13 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 * MPI with Beagle, 1 GPU (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, gres=gpu:V100:1, exclusive)
   * Note: runs did not converge
 
-|  beagle_ver  | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup | CPU-core efficiency |
-| ------------ | ------ | ------------- | --------- | -------- | ------------ | ------------------- |
-| v3.1.2 (GPU) | 1      | 1             | 2:54:15   | 2:56:17
-| v3.1.2 (GPU) | 2      | 1             | 1:33:30   | 1:35:26  
+|  beagle_ver  | ntasks | cpus-per-task | mcmc time | walltime | mcmc speedup |
+| ------------ | ------ | ------------- | --------- | -------- | ------------ |
+| v3.1.2       | 1      | 1             | 2:54:15   | 2:56:17  | 1.59x        |
+| v3.1.2       | 2      | 1             | 1:33:30   | 1:35:26  | 2.97x        |
+| v3.1.2       | 4      | 1             | 1:48:26   | 1:50:21  | 2.56x        |
+| v3.1.2       | 8      | 1             | 1:49:15   | 1:51:09  | 2.54x        |
+| v3.1.2       | 16     | 1             | 1:53:51   | 1:55:45  | 2.44x        |
 
 * Hybrid (rsrc: mem-per-cpu=0, node=1, ntasks-per-node=#, cpus-per-task=#, exclusive); using 16 hyperthreaded CPU-cores
   * Note: runs did not converge
