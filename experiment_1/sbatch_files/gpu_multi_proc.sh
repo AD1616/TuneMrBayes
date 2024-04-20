@@ -13,4 +13,4 @@ cd $HOME/scratch/MrBayes-VIP-Module/experiment_1/gpu_multi_proc
 
 module load openmpi cuda
 
-srun $HOME/mrbayes/gpu/bin/mb ../nexus_files/boykin_and_de_barro_alignment.nexus
+srun $HOME/mrbayes/gpu/bin/mb ../nexus_files/boykin_and_de_barro_alignment_gpu.nexus

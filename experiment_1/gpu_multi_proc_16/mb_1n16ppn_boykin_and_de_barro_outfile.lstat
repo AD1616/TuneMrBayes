@@ -1,0 +1,7 @@
+[ID: 0223221126]
+run	arithmetic_mean	harmonic_mean	values_discarded
+1	-3.367884e+04	-3.375708e+04	yes
+2	-2.054162e+04	-2.102048e+04	yes
+3	-2.585375e+04	-2.707011e+04	yes
+4	-1.555609e+04	-1.557464e+04	yes
+all	-1.555748e+04	-2.054086e+04	yes

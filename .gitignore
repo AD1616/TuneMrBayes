@@ -1,3 +1,4 @@
 MrBayes*
 beagle-lib*
 *.pyc
+*/core.*

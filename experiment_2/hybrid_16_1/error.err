@@ -1,0 +1,6 @@
+
+Lmod is automatically replacing "mvapich2/2.3.6-ouywal" with "openmpi/4.1.4".
+
+slurmstepd: error: *** JOB 601036 ON atl1-1-01-005-4-2 CANCELLED AT 2024-04-19T23:48:02 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 601036.0 ON atl1-1-01-005-4-2 CANCELLED AT 2024-04-19T23:48:02 DUE TO TIME LIMIT ***

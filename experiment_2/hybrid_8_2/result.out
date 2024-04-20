@@ -1,0 +1,987 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-19-2024 21:46:51
+Job ID:    601035
+User ID:   akim466
+Account:   coc
+Job name:  algae_hybrid_8_2
+Partition: coc-cpu
+---------------------------------------
+                               MrBayes v3.1.2
+
+                      (Bayesian Analysis of Phylogeny)
+
+                             (Parallel version)
+                             (8 MPI processes)
+                             (2 OpenMP threads)
+
+                                     by
+
+                  Fredrik Ronquist and John P. Huelsenbeck
+
+                       School of Computational Science
+                           Florida State University
+                            ronquist@csit.fsu.edu 
+
+                 Section of Ecology, Behavior and Evolution
+                       Division of Biological Sciences
+                     University of California, San Diego
+                           johnh@biomail.ucsd.edu
+
+              Distributed under the GNU General Public License
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+
+
+   Executing file "../nexus_files/Lindsey_et_al_2021_volvocine_algae_dataset_hybrid.nexus"
+   UNIX line termination
+   Longest line length = 12662
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading data block
+      Allocated matrix
+      Matrix has 68 taxa and 12650 characters
+      Data is Protein
+      Gaps coded as -
+      Missing data coded as ?
+      Setting default partition (does not divide up characters).
+      Taxon  1 -> ChvaNC64A
+      Taxon  2 -> VcnaHK10
+      Taxon  3 -> VineS11_10
+      Taxon  4 -> ChmS11_16f
+      Taxon  5 -> ChscS2486
+      Taxon  6 -> ChreCC503
+      Taxon  7 -> ChglS81_72
+      Taxon  8 -> ViauN878
+      Taxon  9 -> ViauS80_81
+      Taxon 10 -> ChdS11_55a
+      Taxon 11 -> VogS199_80
+      Taxon 12 -> VobaN730
+      Taxon 13 -> VokiN543
+      Taxon 14 -> VofeN3986
+      Taxon 15 -> AspeN564
+      Taxon 16 -> AsguN418
+      Taxon 17 -> PamoF2362
+      Taxon 18 -> PamoN890
+      Taxon 19 -> VostS90_1
+      Taxon 20 -> VocoN582
+      Taxon 21 -> VocoF2337
+      Taxon 22 -> VoprN895
+      Taxon 23 -> VoboN893
+      Taxon 24 -> PacoF2361
+      Taxon 25 -> PacoN572
+      Taxon 26 -> TesoN571
+      Taxon 27 -> BasaN566
+      Taxon 28 -> ViorN882
+      Taxon 29 -> YaunF2364
+      Taxon 30 -> PlcaN728
+      Taxon 31 -> CochF2326
+      Taxon 32 -> CochN3383
+      Taxon 33 -> GopeN2863
+      Taxon 34 -> ChdeS70_81
+      Taxon 35 -> GoocN851
+      Taxon 36 -> GomuN737
+      Taxon 37 -> GoquN653
+      Taxon 38 -> GoviN654
+      Taxon 39 -> VoauN541
+      Taxon 40 -> PlthN4126
+      Taxon 41 -> EuelN720
+      Taxon 42 -> EuelN719
+      Taxon 43 -> PljaU2523
+      Taxon 44 -> EumiN856
+      Taxon 45 -> EuelN456
+      Taxon 46 -> VoteN544
+      Taxon 47 -> VoovN2569
+      Taxon 48 -> VodiN4128
+      Taxon 49 -> VoobN868
+      Taxon 50 -> VcweN866
+      Taxon 51 -> VckaN732
+      Taxon 52 -> VcnaN865
+      Taxon 53 -> EuunS24_1c
+      Taxon 54 -> EupeN725
+      Taxon 55 -> EucyF2322
+      Taxon 56 -> EuilN460
+      Taxon 57 -> EuelN717
+      Taxon 58 -> EucyN722
+      Taxon 59 -> PlstN1362
+      Taxon 60 -> PlstN1363
+      Taxon 61 -> PlinN736
+      Taxon 62 -> EuelN568
+      Taxon 63 -> EuelN458
+      Taxon 64 -> VopoN4127
+      Taxon 65 -> VogiN867
+      Taxon 66 -> VoafN863
+      Taxon 67 -> EuelF2321
+      Taxon 68 -> CoanF2363
+      Setting output file names to "../nexus_files/Lindsey_et_al_2021_volvocine_algae_dataset_hybrid.nexus.run<i>.<p/t>"
+      Successfully read matrix
+   Exiting data block
+   Reading MrBayes block
+      Setting autoclose to yes
+      Setting nowarnings to yes
+      Defining charset called gene001181
+      Defining charset called gene001650
+      Defining charset called gene001976
+      Defining charset called gene002177
+      Defining charset called gene002242
+      Defining charset called gene002252
+      Defining charset called gene002273
+      Defining charset called gene002313
+      Defining charset called gene002345
+      Defining charset called gene002356
+      Defining charset called gene002369
+      Defining charset called gene002371
+      Defining charset called gene002373
+      Defining charset called gene002381
+      Defining charset called gene002396
+      Defining charset called gene002447
+      Defining charset called gene002537
+      Defining charset called gene002538
+      Defining charset called gene002544
+      Defining charset called gene002581
+      Defining charset called gene002624
+      Defining charset called gene002640
+      Defining charset called gene002681
+      Defining charset called gene002762
+      Defining charset called gene002763
+      Defining charset called gene002810
+      Defining charset called gene002814
+      Defining charset called gene002888
+      Defining charset called gene002962
+      Defining charset called gene002986
+      Defining charset called gene003057
+      Defining charset called gene003095
+      Defining charset called gene003157
+      Defining charset called gene003199
+      Defining charset called gene003203
+      Defining charset called gene003211
+      Defining charset called gene003266
+      Defining charset called gene003755
+      Defining charset called gene003786
+      Defining charset called gene004274
+      Defining partition called lindseyetal
+      Setting lindseyetal as the partition, dividing characters into 40 parts.
+      Resetting model values to defaults (NB! Any existing model settings will be deleted!)
+      Reinitializing link table (linking all parameters)
+      Setting Aamodelpr to Fixed(Wag) for partition 1
+      Setting Aamodelpr to Fixed(Wag) for partition 2
+      Setting Aamodelpr to Fixed(Wag) for partition 6
+      Setting Aamodelpr to Fixed(Wag) for partition 8
+      Setting Aamodelpr to Fixed(Wag) for partition 10
+      Setting Aamodelpr to Fixed(Wag) for partition 11
+      Setting Aamodelpr to Fixed(Wag) for partition 12
+      Setting Aamodelpr to Fixed(Wag) for partition 13
+      Setting Aamodelpr to Fixed(Wag) for partition 14
+      Setting Aamodelpr to Fixed(Wag) for partition 15
+      Setting Aamodelpr to Fixed(Wag) for partition 16
+      Setting Aamodelpr to Fixed(Wag) for partition 17
+      Setting Aamodelpr to Fixed(Wag) for partition 19
+      Setting Aamodelpr to Fixed(Wag) for partition 20
+      Setting Aamodelpr to Fixed(Wag) for partition 22
+      Setting Aamodelpr to Fixed(Wag) for partition 26
+      Setting Aamodelpr to Fixed(Wag) for partition 27
+      Setting Aamodelpr to Fixed(Wag) for partition 30
+      Setting Aamodelpr to Fixed(Wag) for partition 32
+      Setting Aamodelpr to Fixed(Wag) for partition 36
+      Setting Aamodelpr to Fixed(Wag) for partition 38
+      Setting Aamodelpr to Fixed(Wag) for partition 39
+      Setting Aamodelpr to Fixed(Wag) for partition 40
+      Successfully set prior model parameters to
+      partitions 1, 2, 6, 8, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 22, 26, 27, 30, 32, 36, 38, 39, and 40 (if applicable)
+      Setting Aamodelpr to Fixed(Jones) for partition 3
+      Setting Aamodelpr to Fixed(Jones) for partition 4
+      Setting Aamodelpr to Fixed(Jones) for partition 7
+      Setting Aamodelpr to Fixed(Jones) for partition 9
+      Setting Aamodelpr to Fixed(Jones) for partition 18
+      Setting Aamodelpr to Fixed(Jones) for partition 21
+      Setting Aamodelpr to Fixed(Jones) for partition 23
+      Setting Aamodelpr to Fixed(Jones) for partition 24
+      Setting Aamodelpr to Fixed(Jones) for partition 25
+      Setting Aamodelpr to Fixed(Jones) for partition 28
+      Setting Aamodelpr to Fixed(Jones) for partition 29
+      Setting Aamodelpr to Fixed(Jones) for partition 31
+      Setting Aamodelpr to Fixed(Jones) for partition 33
+      Setting Aamodelpr to Fixed(Jones) for partition 34
+      Setting Aamodelpr to Fixed(Jones) for partition 35
+      Setting Aamodelpr to Fixed(Jones) for partition 37
+      Successfully set prior model parameters to
+      partitions 3, 4, 7, 9, 18, 21, 23, 24, 25, 28, 29, 31, 33, 34, 35, and 37 (if applicable)
+      Setting Aamodelpr to Fixed(Dayhoff) for partition 5
+      Successfully set prior model parameters to
+      partition 5 (if applicable)
+      Setting Rates to Invgamma for partition 1
+      Setting Rates to Invgamma for partition 2
+      Setting Rates to Invgamma for partition 3
+      Setting Rates to Invgamma for partition 4
+      Setting Rates to Invgamma for partition 6
+      Setting Rates to Invgamma for partition 7
+      Setting Rates to Invgamma for partition 8
+      Setting Rates to Invgamma for partition 9
+      Setting Rates to Invgamma for partition 11
+      Setting Rates to Invgamma for partition 12
+      Setting Rates to Invgamma for partition 13
+      Setting Rates to Invgamma for partition 14
+      Setting Rates to Invgamma for partition 15
+      Setting Rates to Invgamma for partition 16
+      Setting Rates to Invgamma for partition 19
+      Setting Rates to Invgamma for partition 21
+      Setting Rates to Invgamma for partition 22
+      Setting Rates to Invgamma for partition 23
+      Setting Rates to Invgamma for partition 26
+      Setting Rates to Invgamma for partition 27
+      Setting Rates to Invgamma for partition 28
+      Setting Rates to Invgamma for partition 29
+      Setting Rates to Invgamma for partition 30
+      Setting Rates to Invgamma for partition 31
+      Setting Rates to Invgamma for partition 33
+      Setting Rates to Invgamma for partition 34
+      Setting Rates to Invgamma for partition 35
+      Setting Rates to Invgamma for partition 38
+      Setting Rates to Invgamma for partition 39
+      Setting Rates to Invgamma for partition 40
+      Successfully set likelihood model parameters to
+      partitions 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 26, 27, 28, 29, 30, 31, 33, 34, 35, 38, 39, and 40 (if applicable)
+      Setting Rates to Gamma for partition 1
+      Setting Rates to Gamma for partition 2
+      Setting Rates to Gamma for partition 3
+      Setting Rates to Gamma for partition 4
+      Setting Rates to Gamma for partition 5
+      Setting Rates to Gamma for partition 6
+      Setting Rates to Gamma for partition 7
+      Setting Rates to Gamma for partition 8
+      Setting Rates to Gamma for partition 9
+      Setting Rates to Gamma for partition 10
+      Setting Rates to Gamma for partition 11
+      Setting Rates to Gamma for partition 12
+      Setting Rates to Gamma for partition 13
+      Setting Rates to Gamma for partition 14
+      Setting Rates to Gamma for partition 15
+      Setting Rates to Gamma for partition 16
+      Setting Rates to Gamma for partition 17
+      Setting Rates to Gamma for partition 18
+      Setting Rates to Gamma for partition 19
+      Setting Rates to Gamma for partition 20
+      Setting Rates to Gamma for partition 21
+      Setting Rates to Gamma for partition 22
+      Setting Rates to Gamma for partition 23
+      Setting Rates to Gamma for partition 24
+      Setting Rates to Gamma for partition 25
+      Setting Rates to Gamma for partition 26
+      Setting Rates to Gamma for partition 27
+      Setting Rates to Gamma for partition 28
+      Setting Rates to Gamma for partition 29
+      Setting Rates to Gamma for partition 30
+      Setting Rates to Gamma for partition 31
+      Setting Rates to Gamma for partition 32
+      Setting Rates to Gamma for partition 33
+      Setting Rates to Gamma for partition 34
+      Setting Rates to Gamma for partition 35
+      Setting Rates to Gamma for partition 36
+      Setting Rates to Gamma for partition 37
+      Setting Rates to Gamma for partition 38
+      Setting Rates to Gamma for partition 39
+      Setting Rates to Gamma for partition 40
+      Successfully set likelihood model parameters to all
+      applicable data partitions 
+      Setting Statefreqpr to Fixed(Empirical) for partition 1
+      Setting Statefreqpr to Fixed(Empirical) for partition 2
+      Setting Statefreqpr to Fixed(Empirical) for partition 9
+      Setting Statefreqpr to Fixed(Empirical) for partition 10
+      Setting Statefreqpr to Fixed(Empirical) for partition 12
+      Setting Statefreqpr to Fixed(Empirical) for partition 18
+      Setting Statefreqpr to Fixed(Empirical) for partition 19
+      Setting Statefreqpr to Fixed(Empirical) for partition 20
+      Setting Statefreqpr to Fixed(Empirical) for partition 25
+      Setting Statefreqpr to Fixed(Empirical) for partition 27
+      Setting Statefreqpr to Fixed(Empirical) for partition 30
+      Setting Statefreqpr to Fixed(Empirical) for partition 36
+      Setting Statefreqpr to Fixed(Empirical) for partition 38
+      Setting Statefreqpr to Fixed(Empirical) for partition 39
+      Successfully set prior model parameters to
+      partitions 1, 2, 9, 10, 12, 18, 19, 20, 25, 27, 30, 36, 38, and 39 (if applicable)
+      Setting number of generations to 1000000
+      Setting number of runs to 4
+      Using relative burnin (a fraction of samples discarded).
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "../nexus_files/Lindsey_et_al_2021_volvocine_algae_dataset_hybrid.nexus.<run<i>.p/run<i>.t>"
+      Successfully set chain parameters
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Setting diagnosing frequency to 5000
+      Setting number of chains to 4
+      Setting starting tree to "Random"
+      Successfully set chain parameters
+      Setting program to save branch length information
+      Setting chain output file names to "mrbayes_40geneslindseyetal_out.<run<i>.p/run<i>.t>"
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 0032981065
+      Seed = 1713577613
+      Swapseed = 1713577613
+      Model settings:
+
+         Settings for partition 1 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 2 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 3 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 4 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 5 --
+            Datatype  = Protein
+            Aamodel   = Dayhoff
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Dayhoff frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 6 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 7 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 8 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 9 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 10 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 11 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 12 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 13 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 14 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 15 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 16 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 17 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 18 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 19 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 20 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 21 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 22 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 23 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 24 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 25 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 26 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 27 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 28 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 29 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 30 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 31 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 32 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 33 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 34 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 35 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 36 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 37 --
+            Datatype  = Protein
+            Aamodel   = Jones
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Jones frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 38 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 39 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+         Settings for partition 40 --
+            Datatype  = Protein
+            Aamodel   = Wag
+            Covarion  = No
+            # States  = 20
+                        State frequencies are fixed to the Wag frequencies
+            Rates     = Gamma
+                        Gamma shape parameter is uniformly dist-
+                        ributed on the interval (0.00,200.00).
+                        Gamma distribution is approximated using 4 categories.
+
+      Active parameters: 
+
+                          Partition(s)
+         Parameters       1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+         ---------------------------------------------------------------------------------------------------------------------------------------
+         Statefreq        1  1  2  2  3  1  2  1  2  1  1  1  1  1  1  1  1  2  1  1  2  1  2  2  2  1  1  2  2  1  2  1  2  2  2  1  2  1  1  1
+         Shape            4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4  4
+         Topology         5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5
+         Brlens           6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6
+         ---------------------------------------------------------------------------------------------------------------------------------------
+
+         All parameters can be linked or unlinked across partitions
+
+         1 --  Parameter  = Statefreq
+               Prior      = Fixed (Wag frequencies)
+               Partitions = 1, 2, 6, 8, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 22, 26, 27, 30, 32, 36, 38, 39, and 40
+         2 --  Parameter  = Statefreq
+               Prior      = Fixed (Jones frequencies)
+               Partitions = 3, 4, 7, 9, 18, 21, 23, 24, 25, 28, 29, 31, 33, 34, 35, and 37
+         3 --  Parameter  = Statefreq
+               Prior      = Fixed (Dayhoff frequencies)
+               Partition  = 5
+         4 --  Parameter  = Shape
+               Prior      = Uniform(0.00,200.00)
+               Partitions = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, and 40
+         5 --  Parameter  = Topology
+               Prior      = All topologies equally probable a priori
+               Partitions = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, and 40
+         6 --  Parameter  = Brlens
+               Prior      = Branch lengths are Unconstrained:Exponential(10.0)
+               Partitions = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, and 40
+
+      Number of chains on processor 1 = 2
+      Number of chains on processor 2 = 2
+      Number of chains on processor 3 = 2
+      Number of chains on processor 4 = 2
+      Number of chains on processor 5 = 2
+      Number of chains on processor 6 = 2
+      Number of chains on processor 7 = 2
+      Number of chains on processor 8 = 2
+      Number of taxa = 68
+      Number of characters = 12650
+      Compressing data matrix for division 1
+      Division 1 has 310 unique site patterns
+      Compressing data matrix for division 2
+      Division 2 has 364 unique site patterns
+      Compressing data matrix for division 3
+      Division 3 has 277 unique site patterns
+      Compressing data matrix for division 4
+      Division 4 has 177 unique site patterns
+      Compressing data matrix for division 5
+      Division 5 has 288 unique site patterns
+      Compressing data matrix for division 6
+      Division 6 has 244 unique site patterns
+      Compressing data matrix for division 7
+      Division 7 has 127 unique site patterns
+      Compressing data matrix for division 8
+      Division 8 has 163 unique site patterns
+      Compressing data matrix for division 9
+      Division 9 has 315 unique site patterns
+      Compressing data matrix for division 10
+      Division 10 has 249 unique site patterns
+      Compressing data matrix for division 11
+      Division 11 has 134 unique site patterns
+      Compressing data matrix for division 12
+      Division 12 has 213 unique site patterns
+      Compressing data matrix for division 13
+      Division 13 has 113 unique site patterns
+      Compressing data matrix for division 14
+      Division 14 has 191 unique site patterns
+      Compressing data matrix for division 15
+      Division 15 has 110 unique site patterns
+      Compressing data matrix for division 16
+      Division 16 has 87 unique site patterns
+      Compressing data matrix for division 17
+      Division 17 has 148 unique site patterns
+      Compressing data matrix for division 18
+      Division 18 has 172 unique site patterns
+      Compressing data matrix for division 19
+      Division 19 has 379 unique site patterns
+      Compressing data matrix for division 20
+      Division 20 has 518 unique site patterns
+      Compressing data matrix for division 21
+      Division 21 has 186 unique site patterns
+      Compressing data matrix for division 22
+      Division 22 has 241 unique site patterns
+      Compressing data matrix for division 23
+      Division 23 has 462 unique site patterns
+      Compressing data matrix for division 24
+      Division 24 has 197 unique site patterns
+      Compressing data matrix for division 25
+      Division 25 has 338 unique site patterns
+      Compressing data matrix for division 26
+      Division 26 has 174 unique site patterns
+      Compressing data matrix for division 27
+      Division 27 has 247 unique site patterns
+      Compressing data matrix for division 28
+      Division 28 has 257 unique site patterns
+      Compressing data matrix for division 29
+      Division 29 has 213 unique site patterns
+      Compressing data matrix for division 30
+      Division 30 has 247 unique site patterns
+      Compressing data matrix for division 31
+      Division 31 has 167 unique site patterns
+      Compressing data matrix for division 32
+      Division 32 has 109 unique site patterns
+      Compressing data matrix for division 33
+      Division 33 has 237 unique site patterns
+      Compressing data matrix for division 34
+      Division 34 has 348 unique site patterns
+      Compressing data matrix for division 35
+      Division 35 has 135 unique site patterns
+      Compressing data matrix for division 36
+      Division 36 has 168 unique site patterns
+      Compressing data matrix for division 37
+      Division 37 has 163 unique site patterns
+      Compressing data matrix for division 38
+      Division 38 has 644 unique site patterns
+      Compressing data matrix for division 39
+      Division 39 has 391 unique site patterns
+      Compressing data matrix for division 40
+      Division 40 has 114 unique site patterns
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will change
+            4.76 %   param. 4 (gamma shape) with multiplier
+           71.43 %   param. 5 (topology and branch lengths) with extending TBR
+           23.81 %   param. 5 (topology and branch lengths) with LOCAL
+      Creating parsimony (bitset) matrix for division 1
+      Creating parsimony (bitset) matrix for division 2
+      Creating parsimony (bitset) matrix for division 3
+      Creating parsimony (bitset) matrix for division 4
+      Creating parsimony (bitset) matrix for division 5
+      Creating parsimony (bitset) matrix for division 6
+      Creating parsimony (bitset) matrix for division 7
+      Creating parsimony (bitset) matrix for division 8
+      Creating parsimony (bitset) matrix for division 9
+      Creating parsimony (bitset) matrix for division 10
+      Creating parsimony (bitset) matrix for division 11
+      Creating parsimony (bitset) matrix for division 12
+      Creating parsimony (bitset) matrix for division 13
+      Creating parsimony (bitset) matrix for division 14
+      Creating parsimony (bitset) matrix for division 15
+      Creating parsimony (bitset) matrix for division 16
+      Creating parsimony (bitset) matrix for division 17
+      Creating parsimony (bitset) matrix for division 18
+      Creating parsimony (bitset) matrix for division 19
+      Creating parsimony (bitset) matrix for division 20
+      Creating parsimony (bitset) matrix for division 21
+      Creating parsimony (bitset) matrix for division 22
+      Creating parsimony (bitset) matrix for division 23
+      Creating parsimony (bitset) matrix for division 24
+      Creating parsimony (bitset) matrix for division 25
+      Creating parsimony (bitset) matrix for division 26
+      Creating parsimony (bitset) matrix for division 27
+      Creating parsimony (bitset) matrix for division 28
+      Creating parsimony (bitset) matrix for division 29
+      Creating parsimony (bitset) matrix for division 30
+      Creating parsimony (bitset) matrix for division 31
+      Creating parsimony (bitset) matrix for division 32
+      Creating parsimony (bitset) matrix for division 33
+      Creating parsimony (bitset) matrix for division 34
+      Creating parsimony (bitset) matrix for division 35
+      Creating parsimony (bitset) matrix for division 36
+      Creating parsimony (bitset) matrix for division 37
+      Creating parsimony (bitset) matrix for division 38
+      Creating parsimony (bitset) matrix for division 39
+      Creating parsimony (bitset) matrix for division 40
+      Initializing conditional likelihoods for terminals
+      Initializing conditional likelihoods for internal nodes
+      Initial log likelihoods for run 1:
+         Chain 1 -- -452077.660985
+         Chain 2 -- -452512.133197
+
+      Chain results:
+
+         1 -- [-451239.531] (-452369.907) [...14 remote chains...] 
+      1000 -- (-398239.323) (-395090.100) [...14 remote chains...] -- 87:08:06
+      2000 -- (-365868.087) (-369933.748) [...14 remote chains...] -- 89:24:15
+      3000 -- [-337438.756] (-349178.411) [...14 remote chains...] -- 86:07:47
+      4000 -- [-319792.404] (-330660.642) [...14 remote chains...] -- 83:49:48
+      5000 -- [-315197.879] (-323218.689) [...14 remote chains...] -- 83:14:54
+
+      Average standard deviation of split frequencies: 0.119431
+
+      6000 -- [-313137.327] (-318255.319) [...14 remote chains...] -- 82:55:31
+      7000 -- [-312546.952] (-315455.550) [...14 remote chains...] -- 81:50:37
+      8000 -- [-312238.024] (-314581.131) [...14 remote chains...] -- 81:21:28
+      9000 -- [-311810.831] (-313490.467) [...14 remote chains...] -- 81:05:04
+      10000 -- [-311607.921] (-313002.270) [...14 remote chains...] -- 80:49:21
+
+      Average standard deviation of split frequencies: 0.083899
+
+      11000 -- [-311332.369] (-312737.978) [...14 remote chains...] -- 80:11:38
+      12000 -- [-311167.595] (-312417.574) [...14 remote chains...] -- 79:51:48
+      13000 -- [-310805.130] (-312227.035) [...14 remote chains...] -- 79:36:49
+      14000 -- (-310696.990) (-311507.836) [...14 remote chains...] -- 79:42:06
+      15000 -- (-310603.046) (-311272.926) [...14 remote chains...] -- 79:31:46
+
+      Average standard deviation of split frequencies: 0.086122
+
+      16000 -- (-310569.308) (-311137.683) [...14 remote chains...] -- 79:19:04
+      17000 -- (-310505.137) (-310875.715) [...14 remote chains...] -- 79:07:18
+      18000 -- (-310461.086) (-310789.407) [...14 remote chains...] -- 79:23:36
+      19000 -- (-310437.949) (-310754.725) [...14 remote chains...] -- 79:18:42
+      20000 -- (-310395.155) (-310695.686) [...14 remote chains...] -- 79:04:01
+
+      Average standard deviation of split frequencies: 0.070535
+
+      21000 -- (-310358.233) (-310676.486) [...14 remote chains...] -- 79:05:02
+      22000 -- (-310323.648) (-310668.481) [...14 remote chains...] -- 79:08:29
+      23000 -- (-310304.755) (-310670.754) [...14 remote chains...] -- 79:06:14
+      24000 -- (-310295.496) (-310631.359) [...14 remote chains...] -- 79:05:07
+---------------------------------------
+Begin Slurm Epilog: Apr-19-2024 23:47:04
+Job ID:        601035
+Array Job ID:  _4294967294
+User ID:       akim466
+Account:       coc
+Job name:      algae_hybrid_8_2
+Resources:     cpu=24,mem=182808M,node=1
+Rsrc Used:     cput=2-00:04:24,vmem=6676K,walltime=02:00:11,mem=5292K,energy_used=0
+Partition:     coc-cpu
+Nodes:         atl1-1-03-007-24-1
+---------------------------------------

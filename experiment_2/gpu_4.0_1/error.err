@@ -1,0 +1,18 @@
+/var/lib/slurm/slurmd/job601147/slurm_script: line 12: cd: /home/hice1/akim466/scratch/MrBayes-VIP-Module/experiment_2/gpu4.0_1: No such file or directory
+[atl1-1-02-010-33-0:87161:0:87161] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4)
+==== backtrace (tid:  87161) ====
+ 0 0x0000000000015fc4 beagle::gpu::cuda::BeagleGPUImpl<float>::resetScaleFactorsByPartition()  /storage/ice1/5/3/akim466/MrBayes-VIP-Module/beagle-lib-4.0.1/libhmsbeagle/GPU/BeagleGPUImpl.hpp:3277
+ 1 0x0000000000461147 LaunchBEAGLELogLikeMultiPartition()  ???:0
+ 2 0x0000000000458574 LaunchLogLikeForBeagleMultiPartition()  ???:0
+ 3 0x0000000000474218 LogLike()  ???:0
+ 4 0x000000000049a9af RunChain()  ???:0
+ 5 0x000000000049ec27 DoMcmc()  ???:0
+ 6 0x000000000041c25c ParseCommand()  ???:0
+ 7 0x000000000041c95f DoExecute()  ???:0
+ 8 0x000000000041c25c ParseCommand()  ???:0
+ 9 0x0000000000404435 CommandLine()  ???:0
+10 0x0000000000403f1a main()  ???:0
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000403fa9 _start()  ???:0
+=================================
+srun: error: atl1-1-02-010-33-0: task 0: Segmentation fault (core dumped)

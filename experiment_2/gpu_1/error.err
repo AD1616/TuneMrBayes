@@ -1,0 +1,20 @@
+
+Lmod is automatically replacing "mvapich2/2.3.6-ouywal" with "openmpi/4.1.4".
+
+[atl1-1-02-010-33-0:76526:0:76526] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4)
+==== backtrace (tid:  76526) ====
+ 0 0x0000000000013524 beagle::gpu::cuda::BeagleGPUImpl<float>::resetScaleFactorsByPartition()  ???:0
+ 1 0x0000000000461147 LaunchBEAGLELogLikeMultiPartition()  ???:0
+ 2 0x0000000000458574 LaunchLogLikeForBeagleMultiPartition()  ???:0
+ 3 0x0000000000474218 LogLike()  ???:0
+ 4 0x000000000049a9af RunChain()  ???:0
+ 5 0x000000000049ec27 DoMcmc()  ???:0
+ 6 0x000000000041c25c ParseCommand()  ???:0
+ 7 0x000000000041c95f DoExecute()  ???:0
+ 8 0x000000000041c25c ParseCommand()  ???:0
+ 9 0x0000000000404435 CommandLine()  ???:0
+10 0x0000000000403f1a main()  ???:0
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000403fa9 _start()  ???:0
+=================================
+srun: error: atl1-1-02-010-33-0: task 0: Segmentation fault (core dumped)
