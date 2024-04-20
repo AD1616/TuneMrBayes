@@ -67,7 +67,7 @@ One of the primary reasons to study volvocine algae is to understand the evoluti
 | 8      | 2             | 2711          | 0:59:45  | 6.14x        | 38%                 |
 | 16     | 1             | 2804          | 1:02:08  | 5.94x        | 37%                 |
 
-Serial obviously performed the slowest because it could only use one cpu. MPI without Beagle was next, because it could take advantage of multiple cpus, which was a dramatic speedup since MrBayes is extremely parallel. MPI with Beagle with cpus actually saw even faster results, which is likely due to optimizations for Bayesian calculations. MPI with Beagle with gpus was better was using 1 or 2 processors, but it then was preferable to use cpus instead. This is likely due to memory constraints. 
+Serial obviously performed the slowest because it could only use one cpu (except for hybrid with single MPI process). MPI without Beagle was next, because it could take advantage of multiple cpus, which was a dramatic speedup since MrBayes is extremely parallel. MPI with Beagle with cpus actually saw even faster results, which is likely due to optimizations for Bayesian calculations. MPI with Beagle with gpus was better was using 1 or 2 processors, but it then was preferable to use cpus instead. This is likely due to memory constraints. 
 
 **Choose one of the MrBayes MPI builds (b or c from above) and create a scaling graph for 2, 4, 8, and 16 cpus. Concisely describe the observed scaling when more cpus are added.**
 
